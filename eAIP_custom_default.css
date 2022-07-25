@@ -1,0 +1,137 @@
+/************************************************************************************************
+    @Copyright (c) IDS AIRNAV, all rights reserved.
+*************************************************************************************************/
+/******* CUSTOMIZZAZIONI **********/
+@import "eaip-fonts.css";
+
+.T1_default {
+	display: block;
+	text-align: center;
+	text-indent: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-size: 13px;
+	font-weight: Bold;
+	font-style: normal;
+	color: #800000;
+	text-decoration: none;
+	vertical-align: baseline;
+	text-transform: none;
+	font-family: Arial;
+	white-space: normal;
+}
+.T2_default, .T3_default, .T4_default, .T5_default, .T6_default {
+	display: block;
+  color: #800000;
+  font-family: Arial;
+  font-style: normal;
+  font-size: 13px;
+  /*text-align: center;*/
+	/*text-indent: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-size: 9px;
+	font-weight: Bold;
+	font-style: normal;
+	color: #800000;
+	text-decoration: none;
+	vertical-align: baseline;
+	text-transform: none;
+	font-family: Arial;
+	white-space: normal;*/
+}
+
+.P1_default {
+	display: block;
+	text-align: justify;
+	text-indent: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-size: 13px;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	vertical-align: baseline;
+	text-transform: none;
+	font-family: Arial;
+}
+/*Paragraph-text */
+.P2_default, .P3_default, .P4_default,.P5_default,.P6_default{
+	display: block;
+	text-align: justify;
+	text-indent: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+	vertical-align: baseline;
+	text-transform: none;
+	font-family: Arial;
+}
+
+div.added, div.addedAIRAC{ 
+	background-color: #ffcccc;
+}
+
+div.deleted, div.deletedAIRAC{
+	text-decoration: line-through;
+    background-color: #cc9999; 
+}
+				   		   
+div.changed, div.changedAIRAC{ 
+	background-color: #ffcccc; 
+}
+
+div.off, div.offAIRAC, div.offNon-AIRAC      {  }
+
+span.added, span.addedAIRAC{ 
+	background-color: #ffcccc;
+}
+
+span.deleted, span.deletedAIRAC {
+	text-decoration: line-through;
+    background-color: #cc9999; 
+}
+span.changed, span.changedAIRAC {
+	background-color: #ffcccc; 
+}
+
+span.off, span.offAIRAC, span.offNon-AIRAC     {  }
+
+
+div.addedNon-AIRAC{ 
+	background-color: #ccccff;
+}
+
+div.deletedNon-AIRAC{
+	text-decoration: line-through;
+    background-color: #9999cc; 
+}
+				   		   
+div.changedNon-AIRAC{ 
+	background-color: #ccccff; 
+}
+
+span.addedNon-AIRAC{ 
+	background-color: #ccccff;
+}
+
+span.deletedNon-AIRAC {
+	text-decoration: line-through;
+    background-color: #9999cc; 
+}
+span.changedNon-AIRAC{
+	background-color: #ccccff; 
+}
+
