@@ -8,8 +8,8 @@ var HTML_FOLDER = '/eAIP';
 	var lang2="";
 var lang1RootHeader = new Array("GEN_HEADERLang1","ENR_HEADERLang1","AD_HEADERLang1");
 var lang2RootHeader = new Array();
-	var lang1RootHeaderAMDT = new Array("MISC_HEADERLang1");
-	var lang2RootHeaderAMDT = new Array("MISC_HEADERLang2");
+	var lang1RootHeaderAMDT = new Array("MISC_HEADERLang1","GEN General_HEADERLang1","ENR Enroute_HEADERLang1","AD Aerodrome_HEADERLang1");
+	var lang2RootHeaderAMDT = new Array("MISC_HEADERLang2","GEN General_HEADERLang2","ENR Enroute_HEADERLang2","AD Aerodrome_HEADERLang2");
 
 var folderHelpNational='help_national/';
 var folderHelpInterNational='';

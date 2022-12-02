@@ -1,6 +1,5 @@
-/************************************************************************************************
-    @Copyright (c) IDS CORPORATION SPA, all rights reserved.
-    @author Rinaldo De Iulis <rinaldo.deiulis@gmail.com>
+﻿/************************************************************************************************
+    @Copyright (c) IDS AIRNAV, all rights reserved.
 *************************************************************************************************/
 @import "eaip-EC.css";
 body {
@@ -14,78 +13,1274 @@ table {
 	padding:0;
 }
 
-/** Poich� � stato tolto nel foglio di trasformazione delle tabelle la conversione di div in breakspace
+/** Poich? ? stato tolto nel foglio di trasformazione delle tabelle la conversione di div in breakspace
  ** questi stili consentono all'html di distanziare i testi dai bordi delle celle, per le tabelle dinamiche di primo livello e non per le nested **/
 a[id] + table td{
-	padding: 10px;
+	padding: 5px;
 }
 /** Per le nested rimuovo il paddin, utile soprattutto per la nuova gestione delle frazioni **/
 a[id] + table table td{
 	padding: 0px;
 	
 }
-/* Questi stili di esempi permettono di settare configurazioni custom sulla singola tabella **
-a[id="ENR_21_B_TABLE"] + table .col3{
-	background-color: red;
-	width: 30%
-}
-
-a[id="ENR_21_B_TABLE"] + table table .col2{
-	background-color: purple;
-	width: 100%
-}
-
-a[id="ENR_21_B_TABLE"] + table table .col2{
-	background-color: purple;
-	width: 100%
-}*/
-
 /* Questi stili di esempi permettono di settare configurazioni custom sulla singola tabella **/
-a[id="IDS_TABLE2"] + table .col1{
-	background-color: white;
-	width: 15%
-}
-a[id="IDS_TABLE2"] + table .col2{
-	background-color: white;
-	width: 35%
-}
-a[id="IDS_TABLE2"] + table .col3{
-	background-color: white;
-	width: 40%
-}
-a[id="ENR_21_TABLE"] + table .col1{
-	background-color: white;
-	width: 30%
-}
-a[id="ENR_21_TABLE"] + table table .col1{
-	background-color: white;
-	width: 30%
-}
-a[id="ENR_21_TABLE"] + table table .col2{
-	background-color: white;
-	width: 40%
-}
-a[id="ENR_21_TABLE"] + table table .col3{
-	background-color: white;
-	width: 30%
-}
-a[id="ENR_21_TABLE"] + table .col2{
-	background-color: white;
-	width: 15%
-}
-a[id="ENR_21_TABLE"] + table .col3{
-	background-color: white;
-	width: 15%
-}
-a[id="ENR_21_TABLE"] + table .col4{
-	background-color: white;
-	width: 15%
-}
-a[id="ENR_21_TABLE"] + table .col5{
-	background-color: white;
+a[id="gen02_2_TABLE"] + table .col1{
 	width: 25%
 }
 
+a[id="gen02_2_TABLE"] + table .col2{
+	width: 25%
+}
+a[id="gen02_2_TABLE"] + table .col3{
+	width: 25%
+}
+a[id="gen02_2_TABLE"] + table .col4{
+	width: 25%
+}
+
+/********************/
+a[id="gen02_1_TABLE"] + table .col1{
+	width: 25%
+}
+
+a[id="gen02_1_TABLE"] + table .col2{
+	width: 25%
+}
+a[id="gen02_1_TABLE"] + table .col3{
+	width: 25%
+}
+a[id="gen02_1_TABLE"] + table .col4{
+	width: 25%
+}
+
+/********************/
+a[id="GEN21_2017_TABLE"] + table .col1{
+	width: 50%
+}
+a[id="GEN21_2017_TABLE"] + table .col2{
+	width: 50%
+}
+/********************/
+a[id="GEN_2_4_TABLE_L"] + table .col1{
+	width: 75%
+}
+a[id="GEN_2_4_TABLE_L"] + table .col2{
+	width: 25%
+}
+a[id="GEN_2_4_TABLE_R"] + table .col1{
+	width: 25%
+}
+a[id="GEN_2_4_TABLE_R"] + table .col2{
+	width: 75%
+}
+/********************/
+a[id="GEN_2_5_TABLE_L"] + table .col1{
+	width: 15%
+}
+a[id="GEN_2_5_TABLE_L"] + table .col2{
+	width: 37%
+}
+a[id="GEN_2_5_TABLE_L"] + table .col3{
+	width: 28%
+}
+a[id="GEN_2_5_TABLE_L"] + table .col4{
+	width: 20%
+}
+a[id="GEN_2_5_TABLE_R"] + table .col1{
+	width: 37%
+}
+a[id="GEN_2_5_TABLE_R"] + table .col2{
+	width: 28%
+}
+a[id="GEN_2_5_TABLE_R"] + table .col3{
+	width: 15%
+}
+a[id="GEN_2_5_TABLE_R"] + table .col4{
+	width: 20%
+}
+
+/********************/
+a[id="ENR_21_TABLE"] + table .col1{
+	width: 30%
+}
+
+a[id="ENR_21_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR_21_TABLE"] + table .col3{
+	width: 15%
+}
+a[id="ENR_21_TABLE"] + table .col4{
+	width: 15%
+}
+a[id="ENR_21_TABLE"] + table .col5{
+	width: 25%
+}
+/********************/
+a[id="ENR_22_TABLE"] + table .col1{
+	width: 30%
+}
+
+a[id="ENR_22_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR_22_TABLE"] + table .col3{
+	width: 15%
+}
+a[id="ENR_22_TABLE"] + table .col4{
+	width: 15%
+}
+a[id="ENR_22_TABLE"] + table .col5{
+	width: 25%
+}
+/********************/
+a[id="ENR_3_1_TABLE"] + table .col1{
+	width: 20%
+}
+
+a[id="ENR_3_1_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR_3_1_TABLE"] + table .col3{
+	width: 20%
+}
+a[id="ENR_3_1_TABLE"] + table .col4{
+	width: 10%
+}
+a[id="ENR_3_1_TABLE"] + table .col5{
+	width: 5%
+}
+a[id="ENR_3_1_TABLE"] + table .col6{
+	width: 5%
+}
+a[id="ENR_3_1_TABLE"] + table .col7{
+	width: 7%
+}
+a[id="ENR_3_1_TABLE"] + table .col8{
+	width: 20%
+}
+a[id="ENR_3_1_TABLE"] + table table .col1{
+	background-color: white;
+	width: 10%
+}
+a[id="ENR_3_1_TABLE"] + table table .col2{
+	background-color: white;
+	width: 80%
+}
+a[id="ENR_3_1_TABLE"] + table table .col3{
+	background-color: white;
+	width: 10%
+}
+
+/********************/
+a[id="ENR_3_2_TABLE"] + table .col1{
+	width: 20%
+}
+
+a[id="ENR_3_2_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR_3_2_TABLE"] + table .col3{
+	width: 20%
+}
+a[id="ENR_3_2_TABLE"] + table .col4{
+	width: 10%
+}
+a[id="ENR_3_2_TABLE"] + table .col5{
+	width: 5%
+}
+a[id="ENR_3_2_TABLE"] + table .col6{
+	width: 5%
+}
+a[id="ENR_3_2_TABLE"] + table .col7{
+	width: 7%
+}
+a[id="ENR_3_2_TABLE"] + table .col8{
+	width: 20%
+}
+a[id="ENR_3_2_TABLE"] + table table .col1{
+	background-color: white;
+	width: 10%
+}
+a[id="ENR_3_2_TABLE"] + table table .col2{
+	background-color: white;
+	width: 80%
+}
+a[id="ENR_3_2_TABLE"] + table table .col3{
+	background-color: white;
+	width: 10%
+}
+/********************/
+a[id="ENR_3_3_TABLE"] + table .col1{
+	width: 20%
+}
+
+a[id="ENR_3_3_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR_3_3_TABLE"] + table .col3{
+	width: 20%
+}
+a[id="ENR_3_3_TABLE"] + table .col4{
+	width: 10%
+}
+a[id="ENR_3_3_TABLE"] + table .col5{
+	width: 5%
+}
+a[id="ENR_3_3_TABLE"] + table .col6{
+	width: 5%
+}
+a[id="ENR_3_3_TABLE"] + table .col7{
+	width: 7%
+}
+a[id="ENR_3_3_TABLE"] + table .col8{
+	width: 20%
+}
+a[id="ENR_3_3_TABLE"] + table table .col1{
+	background-color: white;
+	width: 10%
+}
+a[id="ENR_3_3_TABLE"] + table table .col2{
+	background-color: white;
+	width: 80%
+}
+a[id="ENR_3_3_TABLE"] + table table .col3{
+	background-color: white;
+	width: 10%
+}
+
+/********************/
+a[id="ENR_4_1_TABLE"] + table .col1{
+	width: 15%
+}
+
+a[id="ENR_4_1_TABLE"] + table .col2{
+	width: 14%
+}
+a[id="ENR_4_1_TABLE"] + table .col3{
+	width: 14%
+}
+a[id="ENR_4_1_TABLE"] + table .col4{
+	width: 14%
+}
+a[id="ENR_4_1_TABLE"] + table .col5{
+	width: 14%
+}
+a[id="ENR_4_1_TABLE"] + table .col6{
+	width: 14%
+}
+a[id="ENR_4_1_TABLE"] + table .col7{
+	width: 15%
+}
+/********************/
+a[id="ENR4_3_TABLE"] + table .col1{
+	width: 20%
+}
+
+a[id="ENR4_3_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR4_3_TABLE"] + table .col3{
+	width: 30%
+}
+a[id="ENR4_3_TABLE"] + table .col4{
+	width: 35%
+}
+/********************/
+a[id="ENR4_4_TABLE"] + table .col1{
+	width: 25%
+}
+
+a[id="ENR4_4_TABLE"] + table .col2{
+	width: 25%
+}
+a[id="ENR4_4_TABLE"] + table .col3{
+	width: 25%
+}
+a[id="ENR4_4_TABLE"] + table .col4{
+	width: 25%
+}
+/********************/
+a[id="Enr45_TABLE"] + table .col1{
+	width: 19%
+}
+
+a[id="Enr45_TABLE"] + table .col2{
+	width: 19%
+}
+a[id="Enr45_TABLE"] + table .col3{
+	width: 24%
+}
+a[id="Enr45_TABLE"] + table .col4{
+	width: 19%
+}
+a[id="Enr45_TABLE"] + table .col5{
+	width: 19%
+}
+/********************/
+a[id="ENR5_1_P_TABLE"] + table .col1{
+	width: 40%
+}
+
+a[id="ENR5_1_P_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="ENR5_1_P_TABLE"] + table .col3{
+	width: 40%
+}
+a[id*="enr_5_1_internal_table1"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_1_internal_table1"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_1_internal_table1"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="ENR5_1_R_TABLE"] + table .col1{
+	width: 40% 
+}
+a[id*="enr_5_1_internal_table2"] + table .col1{
+	width: 10%
+  
+}
+a[id="ENR5_1_R_TABLE"] + table .col2{
+	width: 20% 
+}
+a[id*="enr_5_1_internal_table2"]  + table .col2{
+	width: 80% 
+ 
+}
+a[id="ENR5_1_R_TABLE"] + table .col3{
+	width: 40% 
+}
+
+a[id*="enr_5_1_internal_table2"]  + table .col3{
+	width: 10% 
+
+}
+/********************/
+a[id="ENR5_1_D_TABLE"] + table .col1{
+	width: 40%
+}
+
+a[id="ENR5_1_D_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="ENR5_1_D_TABLE"] + table .col3{
+	width: 40%
+}
+a[id*="enr_5_1_internal_table3"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_1_internal_table3"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_1_internal_table3"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="ENR5_2_TRG_TABLE"] + table .col1{
+	width: 40%
+}
+
+a[id="ENR5_2_TRG_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="ENR5_2_TRG_TABLE"] + table .col3{
+	width: 40%
+}
+a[id*="enr_5_2_internal_table1"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_2_internal_table1"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_2_internal_table1"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="ENR5_2_EXE_TABLE"] + table .col1{
+	width: 40%
+}
+
+a[id="ENR5_2_EXE_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="ENR5_2_EXE_TABLE"] + table .col3{
+	width: 40%
+}
+a[id*="enr_5_2_internal_table2"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_2_internal_table2"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_2_internal_table2"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="ENR5_2_ADIZ_TABLE"] + table .col1{
+	width: 40%
+}
+
+a[id="ENR5_2_ADIZ_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="ENR5_2_ADIZ_TABLE"] + table .col3{
+	width: 40%
+}
+a[id*="enr_5_2_internal_table3"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_2_internal_table3"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_2_internal_table3"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="ENR5_3_TABLE"] + table .col1{
+	width: 30%
+}
+
+a[id="ENR5_3_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="ENR5_3_TABLE"] + table .col3{
+	width: 15%
+}
+a[id="ENR5_3_TABLE"] + table .col4{
+	width: 15%
+}
+
+a[id="ENR5_3_TABLE"] + table .col5{
+	width: 20%
+}
+a[id*="enr_5_3_internal_table1"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_3_internal_table1"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_3_internal_table1"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="ENR_54_TABLE"] + table .col1{
+	width: 18%
+}
+
+a[id="ENR_54_TABLE"] + table .col2{
+	width: 18%
+}
+a[id="ENR_54_TABLE"] + table .col3{
+	width: 16%
+}
+a[id="ENR_54_TABLE"] + table .col4{
+	width: 16%
+}
+
+a[id="ENR_54_TABLE"] + table .col5{
+	width: 16%
+}
+a[id="ENR_54_TABLE"] + table .col6{
+	width: 16%
+}
+/********************/
+a[id="ENR5_5_1_TABLE"] + table .col1{
+	width: 35%
+}
+
+a[id="ENR5_5_1_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR5_5_1_TABLE"] + table .col3{
+	width: 18%
+}
+a[id="ENR5_5_1_TABLE"] + table .col4{
+	width: 32%
+}
+
+a[id*="enr_5_5_internal_table1"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_5_internal_table1"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_5_internal_table1"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="ENR5_5_2_TABLE"] + table .col1{
+	width: 35%
+}
+
+a[id="ENR5_5_2_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR5_5_2_TABLE"] + table .col3{
+	width: 18%
+}
+a[id="ENR5_5_2_TABLE"] + table .col4{
+	width: 32%
+}
+
+a[id*="enr_5_5_internal_table2"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_5_internal_table2"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_5_internal_table2"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="ENR5_5_3_TABLE"] + table .col1{
+	width: 35%
+}
+
+a[id="ENR5_5_3_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="ENR5_5_3_TABLE"] + table .col3{
+	width: 18%
+}
+a[id="ENR5_5_3_TABLE"] + table .col4{
+	width: 32%
+}
+
+a[id*="enr_5_5_internal_table3"] + table .col1{
+	width: 10%
+}
+a[id*="enr_5_5_internal_table3"] + table .col2{
+	width: 80%
+}
+a[id*="enr_5_5_internal_table3"] + table .col3{
+	width: 10%
+}
+/********************/
+a[id="AD_1_3_TABLE"] + table .col1{
+	width: 26%
+}
+
+a[id="AD_1_3_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="AD_1_3_TABLE"] + table .col3{
+	width: 14%
+}
+a[id="AD_1_3_TABLE"] + table .col4{
+	width: 22%
+}
+a[id="AD_1_3_TABLE"] + table .col5{
+	width: 18%
+}
+/********************/
+a[id="AD2.2_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.2_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.2_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2.3_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.3_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.3_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2.4_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.4_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.4_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2.5_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.5_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.5_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2.6_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.6_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.6_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2.7_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.7_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.7_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2_8_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2_8_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2_8_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+
+a[id*="ad_2_8_internal_table2"] + table .col1{
+	width: 22.5%
+  
+}
+
+
+a[id*="ad_2_8_internal_table2"] + table .col2{
+	width: 17.5%
+}
+a[id*="ad_2_8_internal_table2"] + table .col3{
+	width: 30%
+}
+a[id*="ad_2_8_internal_table2"] + table .col4{
+	width: 30%
+}
+/********************/
+a[id*="AD_2_8_INTERNAL_TABLE"] + table .col1{
+	width: 30%
+}
+
+a[id*="AD_2_8_INTERNAL_TABLE"] + table .col2{
+	width: 35%
+}
+a[id*="AD_2_8_INTERNAL_TABLE"] + table .col3{
+	width: 35%
+}
+/********************/
+a[id="AD2.9_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.9_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.9_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2.10_1_TABLE"] + table .col1{
+	width: 30%
+}
+
+a[id="AD2.10_1_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="AD2.10_1_TABLE"] + table .col3{
+	width: 20%
+}
+a[id="AD2.10_1_TABLE"] + table .col4{
+	width: 10%
+}
+
+a[id="AD2.10_1_TABLE"] + table .col5{
+	width: 10%
+}
+a[id="AD2.10_1_TABLE"] + table .col6{
+	width: 10%
+}
+
+a[id="AD2.10_1_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+
+/********************/
+a[id="AD2.10_2_TABLE_ANN14"] + table .col1{
+	width: 30%
+}
+
+a[id="AD2.10_2_TABLE_ANN14"] + table .col2{
+	width: 20%
+}
+a[id="AD2.10_2_TABLE_ANN14"] + table .col3{
+	width: 20%
+}
+a[id="AD2.10_2_TABLE_ANN14"] + table .col4{
+	width: 10%
+}
+
+a[id="AD2.10_2_TABLE_ANN14"] + table .col5{
+	width: 10%
+}
+a[id="AD2.10_2_TABLE_ANN14"] + table .col6{
+	width: 10%
+}
+
+a[id="AD2.10_2_TABLE_ANN14"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2.10_2_TABLE"] + table .col1{
+	width: 30%
+}
+
+a[id="AD2.10_2_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="AD2.10_2_TABLE"] + table .col3{
+	width: 20%
+}
+a[id="AD2.10_2_TABLE"] + table .col4{
+	width: 10%
+}
+
+a[id="AD2.10_2_TABLE"] + table .col5{
+	width: 10%
+}
+a[id="AD2.10_2_TABLE"] + table .col6{
+	width: 10%
+}
+
+a[id="AD2.10_2_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2.11_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.11_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.11_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2.12_1_TABLE"] + table .col1{
+	width: 13%
+}
+
+a[id="AD2.12_1_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="AD2.12_1_TABLE"] + table .col3{
+	width: 15%
+}
+a[id="AD2.12_1_TABLE"] + table .col4{
+	width: 21%
+}
+
+a[id="AD2.12_1_TABLE"] + table .col5{
+	width: 20%
+}
+a[id="AD2.12_1_TABLE"] + table .col6{
+	width: 16%
+}
+
+a[id="AD2.12_1_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2.12_2_TABLE"] + table .col1{
+	width: 13%
+}
+
+a[id="AD2.12_2_TABLE"] + table .col2,
+a[id="AD2.12_2_TABLE"] + table .col3,
+a[id="AD2.12_2_TABLE"] + table .col4,
+a[id="AD2.12_2_TABLE"] + table .col5,
+a[id="AD2.12_2_TABLE"] + table .col6,
+a[id="AD2.12_2_TABLE"] + table .col8{
+	width: 12%
+}
+a[id="AD2.12_2_TABLE"] + table .col7{
+	width: 15%
+}
+a[id="AD2.12_2_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2.12_3_TABLE"] + table .col1{
+	width: 13%
+}
+
+a[id="AD2.12_3_TABLE"] + table .col2{
+	width: 87%
+}
+
+a[id="AD2.12_3_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2.13_TABLE"] + table .col1{
+	width: 15%
+}
+
+a[id="AD2.13_TABLE"] + table .col2{
+	width: 17%
+}
+a[id="AD2.13_TABLE"] + table .col3{
+	width: 17%
+}
+a[id="AD2.13_TABLE"] + table .col4{
+	width: 17%
+}
+
+a[id="AD2.13_TABLE"] + table .col5{
+	width: 17%
+}
+a[id="AD2.13_TABLE"] + table .col6{
+	width: 17%
+}
+
+a[id="AD2.13_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2_14_A_TABLE"] + table .col1{
+	width: 13%
+}
+
+a[id="AD2_14_A_TABLE"] + table .col2{
+	width: 17%
+}
+a[id="AD2_14_A_TABLE"] + table .col3{
+	width: 18%
+}
+a[id="AD2_14_A_TABLE"] + table .col4{
+	width: 17%
+}
+a[id="AD2_14_A_TABLE"] + table .col5{
+	width: 17%
+}
+a[id="AD2_14_A_TABLE"] + table .col6{
+	width: 18%
+}
+a[id="AD2_14_A_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2_14_B_TABLE"] + table .col1{
+	width: 13%
+}
+a[id="AD2_14_B_TABLE"] + table .col2,
+a[id="AD2_14_B_TABLE"] + table .col3,
+a[id="AD2_14_B_TABLE"] + table .col4{
+	width: 22%
+}
+a[id="AD2_14_B_TABLE"] + table .col5{
+	width: 21%
+}
+a[id="AD2_14_B_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2.15_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.15_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.15_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2.16_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD2.16_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD2.16_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD2_17_TABLE"] + table .col1{
+	width: 19%
+}
+
+a[id="AD2_17_TABLE"] + table .col2,
+a[id="AD2_17_TABLE"] + table .col3{
+	width: 13%
+}
+a[id="AD2_17_TABLE"] + table .col4{
+	width: 15%
+}
+a[id="AD2_17_TABLE"] + table .col5{
+	width: 12%
+}
+a[id="AD2_17_TABLE"] + table .col6,
+a[id="AD2_17_TABLE"] + table .col7{
+	width: 14%
+}
+
+a[id="AD2_17_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+
+a[id*="AD2_17_TABINT1_"] + table td{
+	border: none !important;
+}
+a[id*="AD2_17_TABINT1_"] + table .col1,
+a[id*="AD2_17_TABINT1_"] + table .col3{
+	width: 5%;
+}
+a[id*="AD2_17_TABINT1_"] + table .col2{
+	width: 90%;
+}
+/********************/
+a[id="AD2.18_TABLE"] + table .col1{
+	width: 15%
+}
+
+a[id="AD2.18_TABLE"] + table .col2{
+	width: 15%
+}
+a[id="AD2.18_TABLE"] + table .col3{
+	width: 14%
+}
+a[id="AD2.18_TABLE"] + table .col4{
+	width: 14%
+}
+
+a[id="AD2.18_TABLE"] + table .col5{
+	width: 14%
+}
+a[id="AD2.18_TABLE"] + table .col6{
+	width: 14%
+}
+a[id="AD2.18_TABLE"] + table .col7{
+	width: 14%
+}
+a[id="AD2.18_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/********************/
+a[id="AD2.19_TABLE"] + table .col1{
+	width: 14%
+}
+
+a[id="AD2.19_TABLE"] + table .col2{
+	width: 12%
+}
+a[id="AD2.19_TABLE"] + table .col3{
+	width: 12%
+}
+a[id="AD2.19_TABLE"] + table .col4{
+	width: 12%
+}
+
+a[id="AD2.19_TABLE"] + table .col5{
+	width: 14%
+}
+a[id="AD2.19_TABLE"] + table .col6{
+	width: 12%
+}
+a[id="AD2.19_TABLE"] + table .col7{
+	width: 12%
+}
+a[id="AD2.19_TABLE"] + table .col8{
+	width: 12%
+}
+a[id="AD2.19_TABLE"] + table td{
+	border:1px solid #778899 !important;
+}
+/******************AD 3*/
+/********************/
+a[id="AD3.2_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.2_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.2_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3.3_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.3_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.3_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3.4_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.4_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.4_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3.5_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.5_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.5_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3.6_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.6_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.6_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3.7_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.7_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.7_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3_8_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3_8_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3_8_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3.9_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.9_TABLEE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.9_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3.10_2_TABLE"] + table .col1{
+	width: 30%
+}
+
+a[id="AD3.10_2_TABLE"] + table .col2{
+	width: 20%
+}
+a[id="AD3.10_2_TABLE"] + table .col3{
+	width: 20%
+}
+a[id="AD3.10_2_TABLE"] + table .col4{
+	width: 10%
+}
+
+a[id="AD3.10_2_TABLE"] + table .col5{
+	width: 10%
+}
+a[id="AD3.10_2_TABLE"] + table .col6{
+	width: 10%
+}
+
+/********************/
+a[id="AD3.11_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.11_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.11_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+a[id="AD3_12_1_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3_12_1_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3_12_1_TABLE"] + table .col3{
+	width: 60%
+}
+/********************/
+/********************/
+a[id="AD3.13_TABLE"] + table .col1{
+	width: 17%
+}
+
+a[id="AD3.13_TABLE"] + table .col2{
+	width: 17%
+}
+a[id="AD3.13_TABLE"] + table .col3{
+	width: 17%
+}
+a[id="AD3.13_TABLE"] + table .col4{
+	width: 17%
+}
+
+
+/********************/
+a[id="AD3.14_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.14_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.14_TABLE"] + table .col3{
+	width: 60%
+}
+
+/********************/
+a[id="AD3.15_TABLE"] + table .col1{
+	width: 5%
+}
+
+a[id="AD3.15_TABLE"] + table .col2{
+	width: 35%
+}
+a[id="AD3.15_TABLE"] + table .col3{
+	width: 60%
+}
+
+/********************/
+a[id="AD3_16_TABLE"] + table .col1{
+	width: 19%
+}
+
+a[id="AD3_16_TABLE"] + table .col2{
+	width: 13%
+}
+a[id="AD3_16_TABLE"] + table .col3{
+	width: 13%
+}
+a[id="AD3_16_TABLE"] + table .col4{
+	width: 15%
+}
+a[id="AD3_16_TABLE"] + table .col5{
+	width: 12%
+}
+a[id="AD3_16_TABLE"] + table .col6{
+	width: 14%
+}
+a[id="AD3_16_TABLE"] + table .col7{
+	width: 14%
+}
+/********************/
+a[id="AD3_17_TABLE"] + table .col1{
+	width: 12%
+}
+
+a[id="AD3_17_TABLE"] + table .col2{
+	width: 26%
+}
+a[id="AD3_17_TABLE"] + table .col3{
+	width: 14%
+}
+a[id="AD3_17_TABLE"] + table .col4{
+	width: 11%
+}
+a[id="AD3_17_TABLE"] + table .col5{
+	width: 9%
+}
+a[id="AD3_17_TABLE"] + table .col6{
+	width: 12%
+}
+a[id="AD3_17_TABLE"] + table .col7{
+	width: 16%
+}
+/********************/
+a[id="AD3.18_TABLE"] + table .col1{
+	width: 14%
+}
+
+a[id="AD3.18_TABLE"] + table .col2{
+	width: 10%
+}
+a[id="AD3.18_TABLE"] + table .col3{
+	width: 14%
+}
+a[id="AD3.18_TABLE"] + table .col4{
+	width: 12%
+}
+
+a[id="AD3.18_TABLE"] + table .col5{
+	width: 14%
+}
+a[id="AD3.18_TABLE"] + table .col6{
+	width: 12%
+}
+a[id="AD3.18_TABLE"] + table .col7{
+	width: 12%
+}
+a[id="AD3.18_TABLE"] + table .col8{
+	width: 12%
+}
+
+/********************/
+
+a[id="AD2.13R_TABLE"] + table .col1{
+	width: 15%
+}
+
+a[id="AD2.13R_TABLE"] + table .col2{
+	width: 21%
+}
+a[id="AD2.13R_TABLE"] + table .col3{
+	width: 21%
+}
+a[id="AD2.13R_TABLE"] + table .col4{
+	width: 21%
+}
+
+a[id="AD2.13R_TABLE"] + table .col5{
+	width: 22%
+}
+
+/********************/
 .CenteredTable {
     margin-left: auto;
     margin-right: auto;
@@ -130,8 +1325,7 @@ nowrapp {
 td {
     border-color: #778899;
     border-right-style: solid;
-    border-width: 0;
-    margin: 20px;
+    border-width: 0px;
     padding: 2px;
 }
 .center {
@@ -176,7 +1370,7 @@ td {
 .FrontPage {
     background-color: #cfcfdf;
     color: #000000;
-    padding: 15pt 40pt;
+    padding: 15pt ;
     text-align: center;
 }
 .FrontPage-ATC {
@@ -532,7 +1726,126 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
  	color: #000000 ;
     /*text-align: center;*/   
 }
+
+/*** GEN 0.1 *********************************************************************/
+.GEN_0_1  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_0_1_title  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_0_1_table  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.GEN_0_1_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899 !important;
+	color: #000000 ;
+        text-align: center;
+}
+.GEN_0_1_IndSubTable  tr:nth-child(n) th {
+	background-color: #b8b8b8;
+    border:1px solid #778899 !important;
+	color: #000000 ;
+    text-align: center;
+    border:none;
+}
+
+.GEN_0_1_IndSubTable .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899 !important;
+}
+
+.GEN_0_1_IndSubTable table tr:nth-child(n) td {
+	border-style:none !important;
+	white-space: normal;
+}
+
+.GEN_0_1_IndSubTable_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
+
+/*** GEN 0.2 *********************************************************************/
+.GEN_0_2  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_0_2_title  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_0_2_table  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.GEN_0_2_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899 !important;
+	color: #000000 ;
+        text-align: center;
+}
+.GEN_0_2_IndSubTable  tr:nth-child(n) th {
+	background-color: #b8b8b8;
+    border:1px solid #778899 !important;
+	color: #000000 ;
+    text-align: center;
+    border:none;
+}
+.GEN_0_2_IndSubTable .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899 !important;
+}
+.GEN_0_2_IndSubTable table tr:nth-child(n) td {
+	border-style:none !important;
+	white-space: normal;
+}
+.GEN_0_2_IndSubTable_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
 /***********************************************************************************//*********************************************************************************/
+/*** GEN 1.1 *********************************************************************/
+.GEN_1_1  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_1_1_title  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_1_1_table  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.GEN_1_1_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899 !important;
+	color: #000000 ;
+        text-align: center;
+}
+.GEN_1_1_IndSubTable  tr:nth-child(n) th {
+	background-color: #b8b8b8;
+    border:1px solid #778899 !important;
+	color: #000000 ;
+    text-align: center;
+    border:none;
+}
+.GEN_1_1_IndSubTable .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899 !important;
+}
+.GEN_1_1_IndSubTable table tr:nth-child(n) td {
+	border-style:none !important;
+	white-space: normal;
+}
+.GEN_1_1_IndSubTable_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
 /*** GEN 1.2 *********************************************************************/
 .GEN_1_2  {
 	border-style:none;
@@ -548,14 +1861,15 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
     /*text-align: center;*/
 }
 .GEN_1_2_IndSubTable  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
+	border:1px solid #778899 !important;
 	color: #000000 ;
-    /*text-align: center;*/
+        text-align: center;
 }
 .GEN_1_2_IndSubTable  tr:nth-child(n) th {
 	background-color: #b8b8b8;
+    border:1px solid #778899 !important;
 	color: #000000 ;
-    /*text-align: center;*/
+    text-align: center;
     border:none;
 }
 .GEN_1_2_IndSubTable .Table-row-type-1 {
@@ -570,6 +1884,121 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
  	color: #000000 ;
     /*text-align: center;*/   
 }
+/*** GEN 1.3 *********************************************************************/
+.GEN_1_3  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_1_3_title  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_1_3_table  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.GEN_1_3_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899 !important;
+	color: #000000 ;
+        text-align: center;
+}
+.GEN_1_3_IndSubTable  tr:nth-child(n) th {
+	background-color: #b8b8b8;
+    border:1px solid #778899 !important;
+	color: #000000 ;
+    text-align: center;
+    border:none;
+}
+.GEN_1_3_IndSubTable .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899 !important;
+}
+.GEN_1_3_IndSubTable table tr:nth-child(n) td {
+	border-style:none !important;
+	white-space: normal;
+}
+.GEN_1_3_IndSubTable_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
+
+/*** GEN 1.4 *********************************************************************/
+.GEN_1_4  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_1_4_title  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_1_4_table  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.GEN_1_4_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899 !important;
+	color: #000000 ;
+        text-align: center;
+}
+.GEN_1_4_IndSubTable  tr:nth-child(n) th {
+	background-color: #b8b8b8;
+    border:1px solid #778899 !important;
+	color: #000000 ;
+    text-align: center;
+    border:none;
+}
+.GEN_1_4_IndSubTable .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899 !important;
+}
+.GEN_1_4_IndSubTable table tr:nth-child(n) td {
+	border-style:none !important;
+	white-space: normal;
+}
+.GEN_1_4_IndSubTable_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
+/*** GEN 1.5 *********************************************************************/
+.GEN_1_5  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_1_5_title  {
+	border-style:none;
+	white-space: normal;
+}
+.GEN_1_5_table  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.GEN_1_5_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899 !important;
+	color: #000000 ;
+        text-align: center;
+}
+.GEN_1_5_IndSubTable  tr:nth-child(n) th {
+	background-color: #b8b8b8;
+    border:1px solid #778899 !important;
+	color: #000000 ;
+    text-align: center;
+    border:none;
+}
+.GEN_1_5_IndSubTable .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899 !important;
+}
+.GEN_1_5_IndSubTable table tr:nth-child(n) td {
+	border-style:none !important;
+	white-space: normal;
+}
+.GEN_1_5_IndSubTable_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
 /***********************************************************************************/
 /*** GEN 1.6 *********************************************************************/
 .GEN_1_6  {
@@ -581,7 +2010,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	white-space: normal;
 }
 .GEN_1_6_table  tr:nth-child(n) td {
-	border:1px solid #778899 !important;*/
+	border:1px solid #778899 !important;
 	color: #000000 ;
     /*text-align: center;*/
 }
@@ -618,7 +2047,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	white-space: normal;
 }
 .GEN_1_7_table  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
+	border:1px solid #778899 !important;
 	color: #000000 ;
     /*text-align: center;*/
 }
@@ -656,7 +2085,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	white-space: normal;
 }
 .GEN_2_1_table  tr:nth-child(n) td {
-	border:1px solid #778899; !important;
+	border:1px solid #778899 !important;
 	color: #000000 ;
     /*text-align: center;*/
 }
@@ -685,12 +2114,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 }
 /***********************************************************************************/
 /*** GEN 2.2 **************************************************************/
-/*.GEN_2_2 tr td {
-	overflow: hidden;
-   	text-align:left !important;
-}*/
-
-.GEN_2_2 {
+.GEN_2_2  {
 	border-style:none;
 	white-space: normal;
 }
@@ -699,19 +2123,16 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	white-space: normal;
 }
 .GEN_2_2_table  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
+	border:1px solid #778899 !important;
 	color: #000000 ;
     /*text-align: center;*/
 }
-/*
-.GEN_2_2_IndSubTable  tr:nth-child(n) td,
-.AD_0_6_IndSubTable  tr:nth-child(n) td  {
-	border:1px solid #778899;
+.GEN_2_2_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899 !important;
 	color: #000000 ;
-    text-align: center;
+    /*text-align: center;*/
 }
-*/
-.GEN_2_2_IndSubTable  tr:nth-child(n) th{
+.GEN_2_2_IndSubTable  tr:nth-child(n) th {
 	background-color: #b8b8b8;
 	color: #000000 ;
     /*text-align: center;*/
@@ -721,8 +2142,8 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
     background-color: #b8b8b8;
     border: 1px solid #778899 !important;
 }
-.GEN_2_2_IndSubTable table tr:nth-child(n) td{
-	border-style:none !important;
+.GEN_2_2_IndSubTable table tr:nth-child(n) td {
+	border: 1px solid #778899 !important;
 	white-space: normal;
 }
 .GEN_2_2_IndSubTable_title thead {   
@@ -740,12 +2161,12 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	white-space: normal;
 }
 .GEN_2_3_table  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
+	border:1px solid #778899 !important;
 	color: #000000 ;
     /*text-align: center;*/
 }
 .GEN_2_3_IndSubTable  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
+	border:1px solid #778899 !important;
 	color: #000000 ;
     /*text-align: center;*/
 }
@@ -760,7 +2181,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
     border: 1px solid #778899 !important;
 }
 .GEN_2_3_IndSubTable table tr:nth-child(n) td {
-	border-style:none !important;
+	border: 1px solid #778899 !important;
 	white-space: normal;
 }
 .GEN_2_3_IndSubTable_title thead {   
@@ -820,18 +2241,15 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	white-space: normal;
 }
 .GEN_2_4_table  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
+	border:1px solid #778899;
 	color: #000000 ;
-    /*text-align: center;*/
 }
 .GEN_2_4_IndSubTable  tr:nth-child(n) td {
 	color: #000000 ;
-    /*text-align: center;*/
 }
 .GEN_2_4_IndSubTable  tr:nth-child(n) th {
 	background-color: #b8b8b8;
 	color: #000000 ;
-    /*text-align: center;*/
     border:none;
 }
 .GEN_2_4_IndSubTable .Table-row-type-1 {
@@ -840,10 +2258,10 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 }
 .GEN_2_4_IndSubTable table tr:nth-child(n) td {
 	white-space: normal;
+  border: 1px solid #778899 !important;
 }
 .GEN_2_4_IndSubTable_title thead {   
  	color: #000000 ;
-    /*text-align: center;*/   
 }
 
 /*********************************************************************************/
@@ -972,14 +2390,14 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
     /*text-align: center;*/
 }
 .GEN_2_7_IndSubTable  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
+	border:1px solid #778899 !important;
 	color: #000000 ;
-    /*text-align: center;*/
+    text-align: center;
 }
 .GEN_2_7_IndSubTable  tr:nth-child(n) th {
 	background-color: #b8b8b8;
 	color: #000000 ;
-    /*text-align: center;*/
+    text-align: center;
     border:none;
 }
 .GEN_2_7_IndSubTable .Table-row-type-1 {
@@ -1035,39 +2453,39 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 }
 /***********************************************************************************/
 /*** GEN 4.1 *********************************************************************/
-.GEN 4.1  {
+.GEN_4_1  {
 	border-style:none;
 	white-space: normal;
 }
-.GEN 4.1_title  {
+.GEN_4_1_title  {
 	border-style:none;
 	white-space: normal;
 }
-.GEN 4.1_table  tr:nth-child(n) td {
+.GEN_4_1_table  tr:nth-child(n) td {
 	border:1px solid #778899;/* !important;*/
 	color: #000000 ;
     /*text-align: center;*/
 }
-.GEN 4.1_IndSubTable  tr:nth-child(n) td {
+.GEN_4_1_IndSubTable  tr:nth-child(n) td {
 	border:1px solid #778899;/* !important;*/
 	color: #000000 ;
     /*text-align: center;*/
 }
-.GEN 4.1_IndSubTable  tr:nth-child(n) th {
+.GEN_4_1_IndSubTable  tr:nth-child(n) th {
 	background-color: #b8b8b8;
 	color: #000000 ;
     /*text-align: center;*/
     border:none;
 }
-.GEN 4.1_IndSubTable .Table-row-type-1 {
+.GEN_4_1_IndSubTable .Table-row-type-1 {
     background-color: #b8b8b8;
     border: 1px solid #778899 !important;
 }
-.GEN 4.1_IndSubTable table tr:nth-child(n) td {
+.GEN_4_1_IndSubTable table tr:nth-child(n) td {
 	border-style:none !important;
 	white-space: normal;
 }
-.GEN 4.1_IndSubTable_title thead {   
+.GEN_4_1_IndSubTable_title thead {   
  	color: #000000 ;
     /*text-align: center;*/   
 }
@@ -1079,6 +2497,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .GEN_3_4, 
 .GEN_3_5,
 .GEN_4_1,
+.GEN_4_2,
 .GEN_3_6  {
 	border-style:none;
 	white-space: normal;
@@ -1089,6 +2508,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .GEN_3_4_title,
 .GEN_3_5_title,
 .GEN_4_1_title,
+.GEN_4_2_title,
 .GEN_3_6_title  {
 	border-style:none;
 	white-space: normal;
@@ -1100,6 +2520,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .GEN_3_4_table  tr:nth-child(n) td,
 .GEN_3_5_table  tr:nth-child(n) td,
 .GEN_4_1_table  tr:nth-child(n) td,
+.GEN_4_2_table  tr:nth-child(n) td,
 .GEN_3_6_table  tr:nth-child(n) td {
 	border:1px solid #778899;/* !important;*/
 	color: #000000 ;
@@ -1112,6 +2533,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .GEN_3_4_IndSubTable  tr:nth-child(n) td,
 .GEN_3_5_IndSubTable  tr:nth-child(n) td,
 .GEN_4_1_IndSubTable  tr:nth-child(n) td,
+.GEN_4_2_IndSubTable  tr:nth-child(n) td,
 .GEN_3_6_IndSubTable  tr:nth-child(n) td  {
 	border:1px solid #778899 !important;
 	color: #000000 ;
@@ -1124,6 +2546,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .GEN_3_4_IndSubTable  tr:nth-child(n) th,
 .GEN_3_5_IndSubTable  tr:nth-child(n) th,
 .GEN_4_1_IndSubTable  tr:nth-child(n) th,
+.GEN_4_2_IndSubTable  tr:nth-child(n) th,
 .GEN_3_6_IndSubTable  tr:nth-child(n) th {
 	background-color: #b8b8b8;
 	color: #000000 ;
@@ -1137,6 +2560,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .GEN_3_4_IndSubTable .Table-row-type-1,
 .GEN_3_5_IndSubTable .Table-row-type-1,
 .GEN_4_1_IndSubTable .Table-row-type-1,
+.GEN_4_2_IndSubTable .Table-row-type-1,
 .GEN_3_6_IndSubTable .Table-row-type-1  {
     background-color: #b8b8b8;
     border: 1px solid #778899 !important;
@@ -1147,6 +2571,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .GEN_3_4_IndSubTable table tr:nth-child(n) td,
 .GEN_3_5_IndSubTable table tr:nth-child(n) td,
 .GEN_4_1_IndSubTable table tr:nth-child(n) td,
+.GEN_4_2_IndSubTable table tr:nth-child(n) td,
 .GEN_3_6_IndSubTable table tr:nth-child(n) td {
 	border-style:none !important;
 	white-space: normal;
@@ -1157,6 +2582,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .GEN_3_4_IndSubTable_title thead,
 .GEN_3_5_IndSubTable_title thead,
 .GEN_4_1_IndSubTable_title thead,
+.GEN_4_2_IndSubTable_title thead,
 .GEN_3_6_IndSubTable_title thead {   
  	color: #000000 ;
     /*text-align: center;*/   
@@ -1190,7 +2616,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	color: #000000 ;
     text-align: center !important;
 }
-
+.ENR_1_11_IndSubTable  tr:nth-child(n) td,
 .ENR_1_12_IndSubTable  tr:nth-child(n) td,
 .ENR_1_13_IndSubTable  tr:nth-child(n) td,
 .ENR_1_14_IndSubTable  tr:nth-child(n) td {
@@ -1240,6 +2666,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_14 .mediaobject img{
       width:100%;
 } 
+
 /***********************************************************************************/
 /*** ENR 1.1/ENR 1.2/ENR 1.3/ 1.4 / 1.5 / 1.6 / 1.7 / 2.1 / 2.2 ************************************/
 .ENR_1_1,
@@ -1249,8 +2676,31 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_5, 
 .ENR_1_6, 
 .ENR_1_7,
+.ENR_1_8,
+.ENR_1_9,
+.ENR_1_10,
+.ENR_1_11,
+.ENR_1_12,
+.ENR_1_13,
+.ENR_1_14,
+.ENR_4_1,
+.ENR_4_2,
+.ENR_4_4,
+.ENR_4_5,
+.ENR_5_1,
+.ENR_5_2,
+.ENR_5_3,
+.ENR_5_4,
+.ENR_5_5,
+.ENR_5_6,
 .ENR_2_1,
-.ENR_2_2  {
+.ENR_2_2,
+.AD_1_1,
+.AD_1_2,
+.AD_1_3,
+.AD_1_4,
+.AD_1_5,
+.AD_2 {
 	border-style:none;
 	white-space: normal;
 }
@@ -1261,8 +2711,31 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_5_title,
 .ENR_1_6_title,
 .ENR_1_7_title,
+.ENR_1_8_title,
+.ENR_1_9_title,
+.ENR_1_10_title,
+.ENR_1_11_title,
+.ENR_1_12_title,
+.ENR_1_13_title,
+.ENR_1_14_title,
+.ENR_4_1_title,
+.ENR_4_2_title,
+.ENR_4_4_title,
+.ENR_4_5_title,
+.ENR_5_1_title,
+.ENR_5_2_title,
+.ENR_5_3_title,
+.ENR_5_4_title,
+.ENR_5_5_title,
+.ENR_5_6_title,
 .ENR_2_1_title,   
-.ENR_2_2_title   {
+.ENR_2_2_title,
+.AD_1_1_title,
+.AD_1_2_title,
+.AD_1_3_title,
+.AD_1_4_title,
+.AD_1_5_title,
+.AD_2_title    {
 	border-style:none;
 	white-space: normal;
 }
@@ -1273,8 +2746,31 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_5_table  tr:nth-child(n) td,
 .ENR_1_6_table  tr:nth-child(n) td,
 .ENR_1_7_table  tr:nth-child(n) td,
+.ENR_1_8_table  tr:nth-child(n) td,
+.ENR_1_9_table  tr:nth-child(n) td,
+.ENR_1_10_table  tr:nth-child(n) td,
+.ENR_1_11_table  tr:nth-child(n) td,
+.ENR_1_12_table  tr:nth-child(n) td,
+.ENR_1_13_table  tr:nth-child(n) td,
+.ENR_1_14_table  tr:nth-child(n) td,
+.ENR_4_1_table  tr:nth-child(n) td,
+.ENR_4_2_table  tr:nth-child(n) td,
+.ENR_4_4_table  tr:nth-child(n) td,
+.ENR_4_5_table  tr:nth-child(n) td,
+.ENR_5_1_table  tr:nth-child(n) td,
+.ENR_5_2_table  tr:nth-child(n) td,
+.ENR_5_3_table  tr:nth-child(n) td,
+.ENR_5_4_table  tr:nth-child(n) td,
+.ENR_5_5_table  tr:nth-child(n) td,
+.ENR_5_6_table  tr:nth-child(n) td,
 .ENR_2_1_table  tr:nth-child(n) td,
-.ENR_2_2_table  tr:nth-child(n) td {
+.ENR_2_2_table  tr:nth-child(n) td,
+.AD_1_1_table  tr:nth-child(n) td,
+.AD_1_2_table  tr:nth-child(n) td,
+.AD_1_3_table  tr:nth-child(n) td,
+.AD_1_4_table  tr:nth-child(n) td,
+.AD_1_5_table  tr:nth-child(n) td,
+.AD_2_table  tr:nth-child(n) td  {
 	border:1px solid #778899;/* !important;*/
 	color: #000000 ;
     /*text-align: center;*/
@@ -1286,8 +2782,31 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_5_IndSubTable  tr:nth-child(n) td,
 .ENR_1_6_IndSubTable  tr:nth-child(n) td, 
 .ENR_1_7_IndSubTable  tr:nth-child(n) td,
+.ENR_1_8_IndSubTable  tr:nth-child(n) td,
+.ENR_1_9_IndSubTable  tr:nth-child(n) td,
+.ENR_1_10_IndSubTable  tr:nth-child(n) td,
+.ENR_1_11_IndSubTable  tr:nth-child(n) td,
+.ENR_1_12_IndSubTable  tr:nth-child(n) td,
+.ENR_1_13_IndSubTable  tr:nth-child(n) td,
+.ENR_1_14_IndSubTable  tr:nth-child(n) td,
+.ENR_4_1_IndSubTable  tr:nth-child(n) td,
+.ENR_4_2_IndSubTable  tr:nth-child(n) td,
+.ENR_4_4_IndSubTable  tr:nth-child(n) td,
+.ENR_4_5_IndSubTable  tr:nth-child(n) td,
+.ENR_5_1_IndSubTable  tr:nth-child(n) td,
+.ENR_5_2_IndSubTable  tr:nth-child(n) td,
+.ENR_5_3_IndSubTable  tr:nth-child(n) td,
+.ENR_5_4_IndSubTable  tr:nth-child(n) td,
+.ENR_5_5_IndSubTable  tr:nth-child(n) td,
+.ENR_5_6_IndSubTable  tr:nth-child(n) td,
 .ENR_2_1_IndSubTable  tr:nth-child(n) td,
-.ENR_2_2_IndSubTable  tr:nth-child(n) td  {
+.ENR_2_2_IndSubTable  tr:nth-child(n) td,
+.AD_1_1_IndSubTable  tr:nth-child(n) td,
+.AD_1_2_IndSubTable  tr:nth-child(n) td,
+.AD_1_3_IndSubTable  tr:nth-child(n) td,
+.AD_1_4_IndSubTable  tr:nth-child(n) td,
+.AD_1_5_IndSubTable  tr:nth-child(n) td,
+.AD_2_IndSubTable  tr:nth-child(n) td    {
 	border:1px solid #778899 !important;
 	color: #000000 ;
         text-align: center;
@@ -1299,8 +2818,31 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_5_IndSubTable  tr:nth-child(n) th,
 .ENR_1_6_IndSubTable  tr:nth-child(n) th,
 .ENR_1_7_IndSubTable  tr:nth-child(n) th,
+.ENR_1_8_IndSubTable  tr:nth-child(n) th,
+.ENR_1_9_IndSubTable  tr:nth-child(n) th,
+.ENR_1_10_IndSubTable  tr:nth-child(n) th,
+.ENR_1_11_IndSubTable  tr:nth-child(n) th,
+.ENR_1_12_IndSubTable  tr:nth-child(n) th,
+.ENR_1_13_IndSubTable  tr:nth-child(n) th,
+.ENR_1_14_IndSubTable  tr:nth-child(n) th,
+.ENR_4_1_IndSubTable  tr:nth-child(n) th,
+.ENR_4_2_IndSubTable  tr:nth-child(n) th,
+.ENR_4_4_IndSubTable  tr:nth-child(n) th,
+.ENR_4_5_IndSubTable  tr:nth-child(n) th,
+.ENR_5_1_IndSubTable  tr:nth-child(n) th,
+.ENR_5_2_IndSubTable  tr:nth-child(n) th,
+.ENR_5_3_IndSubTable  tr:nth-child(n) th,
+.ENR_5_4_IndSubTable  tr:nth-child(n) th,
+.ENR_5_5_IndSubTable  tr:nth-child(n) th,
+.ENR_5_6_IndSubTable  tr:nth-child(n) th,
 .ENR_2_1_IndSubTable  tr:nth-child(n) th,
-.ENR_2_2_IndSubTable  tr:nth-child(n) th {
+.ENR_2_2_IndSubTable  tr:nth-child(n) th,
+.AD_1_1_IndSubTable  tr:nth-child(n) th,
+.AD_1_2_IndSubTable  tr:nth-child(n) th,
+.AD_1_3_IndSubTable  tr:nth-child(n) th,
+.AD_1_4_IndSubTable  tr:nth-child(n) th,
+.AD_1_5_IndSubTable  tr:nth-child(n) th,
+.AD_2_IndSubTable  tr:nth-child(n) th   {
 	background-color: #b8b8b8;
     border:1px solid #778899 !important;
 	color: #000000 ;
@@ -1314,8 +2856,31 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_5_IndSubTable .Table-row-type-1,
 .ENR_1_6_IndSubTable .Table-row-type-1,
 .ENR_1_7_IndSubTable .Table-row-type-1, 
+.ENR_1_8_IndSubTable .Table-row-type-1,
+.ENR_1_9_IndSubTable .Table-row-type-1,
+.ENR_1_10_IndSubTable .Table-row-type-1,
+.ENR_1_11_IndSubTable .Table-row-type-1,
+.ENR_1_12_IndSubTable .Table-row-type-1,
+.ENR_1_13_IndSubTable .Table-row-type-1,
+.ENR_1_14_IndSubTable .Table-row-type-1,
+.ENR_4_1_IndSubTable .Table-row-type-1,
+.ENR_4_2_IndSubTable .Table-row-type-1,
+.ENR_4_4_IndSubTable .Table-row-type-1,
+.ENR_4_5_IndSubTable .Table-row-type-1,
+.ENR_5_1_IndSubTable .Table-row-type-1,
+.ENR_5_2_IndSubTable .Table-row-type-1,
+.ENR_5_3_IndSubTable .Table-row-type-1,
+.ENR_5_4_IndSubTable .Table-row-type-1,
+.ENR_5_5_IndSubTable .Table-row-type-1,
+.ENR_5_6_IndSubTable .Table-row-type-1,
 .ENR_2_1_IndSubTable .Table-row-type-1,
-.ENR_2_2_IndSubTable .Table-row-type-1  {
+.ENR_2_2_IndSubTable .Table-row-type-1,
+.AD_1_1_IndSubTable .Table-row-type-1,
+.AD_1_2_IndSubTable .Table-row-type-1,
+.AD_1_3_IndSubTable .Table-row-type-1,
+.AD_1_4_IndSubTable .Table-row-type-1,
+.AD_1_5_IndSubTable .Table-row-type-1,
+.AD_2_IndSubTable .Table-row-type-1  {
     background-color: #b8b8b8;
     border: 1px solid #778899 !important;
 }
@@ -1326,8 +2891,31 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_5_IndSubTable table tr:nth-child(n) td,
 .ENR_1_6_IndSubTable table tr:nth-child(n) td,
 .ENR_1_7_IndSubTable table tr:nth-child(n) td,
+.ENR_1_8_IndSubTable table tr:nth-child(n) td,
+.ENR_1_9_IndSubTable table tr:nth-child(n) td,
+.ENR_1_10_IndSubTable table tr:nth-child(n) td,
+.ENR_1_11_IndSubTable table tr:nth-child(n) td,
+.ENR_1_12_IndSubTable table tr:nth-child(n) td,
+.ENR_1_13_IndSubTable table tr:nth-child(n) td,
+.ENR_1_14_IndSubTable table tr:nth-child(n) td,
+.ENR_4_1_IndSubTable table tr:nth-child(n) td,
+.ENR_4_2_IndSubTable table tr:nth-child(n) td,
+.ENR_4_4_IndSubTable table tr:nth-child(n) td,
+.ENR_4_5_IndSubTable table tr:nth-child(n) td,
+.ENR_5_1_IndSubTable table tr:nth-child(n) td,
+.ENR_5_2_IndSubTable table tr:nth-child(n) td,
+.ENR_5_3_IndSubTable table tr:nth-child(n) td,
+.ENR_5_4_IndSubTable table tr:nth-child(n) td,
+.ENR_5_5_IndSubTable table tr:nth-child(n) td,
+.ENR_5_6_IndSubTable table tr:nth-child(n) td,
 .ENR_2_1_IndSubTable table tr:nth-child(n) td,
-.ENR_2_2_IndSubTable table tr:nth-child(n) td {
+.ENR_2_2_IndSubTable table tr:nth-child(n) td,
+.AD_1_1_IndSubTable table tr:nth-child(n) td,
+.AD_1_2_IndSubTable table tr:nth-child(n) td,
+.AD_1_3_IndSubTable table tr:nth-child(n) td,
+.AD_1_4_IndSubTable table tr:nth-child(n) td,
+.AD_1_5_IndSubTable table tr:nth-child(n) td,
+.AD_2_IndSubTable table tr:nth-child(n) td {
 	border-style:none !important;
 	white-space: normal;
 }
@@ -1338,8 +2926,30 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_1_5_IndSubTable thead,
 .ENR_1_6_IndSubTable thead,
 .ENR_1_7_IndSubTable thead,
+.ENR_1_8_IndSubTable thead,
+.ENR_1_9_IndSubTable thead,
+.ENR_1_10_IndSubTable thead,
+.ENR_1_11_IndSubTable thead,
+.ENR_1_12_IndSubTable thead,
+.ENR_1_13_IndSubTable thead,
+.ENR_1_14_IndSubTable thead,
+.ENR_4_1_IndSubTable thead,
+.ENR_4_2_IndSubTable thead,
+.ENR_4_4_IndSubTable thead,
+.ENR_4_5_IndSubTable thead,
+.ENR_5_1_IndSubTable thead,
+.ENR_5_2_IndSubTable thead,
+.ENR_5_3_IndSubTable thead,
+.ENR_5_4_IndSubTable thead,
+.ENR_5_5_IndSubTable thead,
 .ENR_2_1_IndSubTable thead,
-.ENR_2_2_IndSubTable thead {   
+.ENR_2_2_IndSubTable thead,
+.AD_1_1_IndSubTable thead,
+.AD_1_2_IndSubTable thead,
+.AD_1_3_IndSubTable thead,
+.AD_1_4_IndSubTable thead,
+.AD_1_5_IndSubTable thead,
+.AD_2_IndSubTable thead {   
  	color: #000000 ;
     /*text-align: center;*/   
 }
@@ -1641,7 +3251,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
    /*  text-align: center !important; */
 }
 .ENR_4_3_IndSubTable  tr:nth-child(n) td {
-	border:1px solid #778899 !important;*/
+	border:1px solid #778899 !important;
 	color: #000000 ;
     /*text-align: center;*/
 }
@@ -1791,9 +3401,8 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
  	color: #000000 ;
     /*text-align: center;*/   
 }
-/*vl*/
 /*********************************************************************************/
-/*** ENR 5.1 **********************************************************************/
+/*** ENR 5.2 **********************************************************************/
 .ENR_5_2  {
 	border-style:none;
 	white-space: normal;
@@ -1805,54 +3414,10 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 }
 .ENR_5_2_title {   
  	color: #800000 ;
-    /*text-align: center;
-    text-transform: uppercase;*/
+    /*text-align: center;*/
+    text-transform: uppercase;
     /*font-weight: bold;*/
     white-space: normal;
-}
-.ENR_5_2_title td br {
-    display:none;
-}   
-.ENR_5_2_title tr:first-child td  {   
-   /*  text-align: center !important; */
-}
-/*
-.ENR_5_1_IndSubTable  tr:nth-child(n) td {
-	border:1px solid #778899;
-	color: #000000 ;
-    text-align: center;
-}
-*/
-.ENR_5_2_IndSubTable .Table-row-type-1 {
-    background-color: #b8b8b8;
-    border: 1px solid #778899 !important;
-}
-
-.ENR_5_2_IndSubTable table tr:nth-child(n) td {
-	border-style:none !important;
-	white-space: normal;
-}
-.ENR_5_2_IndSubTable thead {   
- 	color: #000000 ;
-    /*text-align: center;*/   
-}
-/*********************************************************************************/
-/*** ENR 5.2 **********************************************************************/
-/*.ENR_5_2  {
-	border-style:none;
-	white-space: normal;
-}
-.ENR_5_2_table  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
-/*	color: #000000 ;
-    /*text-align: center;*/
-/*}
-.ENR_5_2_title {   
- 	color: #800000 ;
-    /*text-align: center;*/
-  /*  text-transform: uppercase;
-    /*font-weight: bold;*/
-  /*  white-space: normal;
 }
 .ENR_5_2_title td br {
     display:none;
@@ -1866,7 +3431,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	color: #000000 ;
     text-align: center;
 }*/
-/*.ENR_5_2_IndSubTable table tr:nth-child(2) td:nth-child(2) {
+.ENR_5_2_IndSubTable table tr:nth-child(2) td:nth-child(2) {
 	border-bottom: 1px solid  #000000 ;
     width: 40%;
 	white-space: normal;
@@ -1880,9 +3445,9 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 	white-space: normal;
 }
 .ENR_5_2_IndSubTable thead {   
- 	color: #000000 ; */
+ 	color: #000000 ;
     /*text-align: center;*/   
-/*}
+}
 /*********************************************************************************/
 /*** ENR 5.3 **********************************************************************/
 .ENR_5_3  {
@@ -1900,10 +3465,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
     /* text-transform: uppercase;
     font-weight: bold;*/
     white-space: normal;
-}
-.ENR_5_3_title td br {
-    display:none;
-}   
+} 
 .ENR_5_3_title tr:first-child td {   
    /*  text-align: center !important; */
 }
@@ -1931,12 +3493,6 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .ENR_5_3_IndSubTable th:nth-child(5){  
   width:100px;
 }
-.ENR_5_3_table  br {
-    display:none;
-}  
-.ENR_5_3_title  br {
-    display:none;
-}  
 /*********************************************************************************/
 /*** ENR 5.4 **********************************************************************/
 .ENR_5_4  {
@@ -2329,6 +3885,10 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .AD_2_title #IDENT {
     color: #000000;
 }
+a[id*="IDS_TABLE"] + table  {
+    border:1px solid #778899;/* !important;*/
+}
+
 
 .AD_2_table  tr:nth-child(n) td {
 	border:1px solid #778899;/* !important;*/
@@ -2339,7 +3899,7 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 }
 
 .AD_2_table table td:first-child,
- .AD_2_table table th:first-child {
+.AD_2_table table th:first-child {
 	border-left:none;
 }
 
@@ -2377,6 +3937,148 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
  	color: #000000 ;
     /*text-align: center;*/   
 }
+.AD_2_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.AD_2_IndSubTable  tr:nth-child(n) th {
+	background-color: #b8b8b8;
+	color: #000000 ;
+    /*text-align: center;*/
+    border:none;
+}
+.AD_2_IndSubTable .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899 !important;
+}
+.AD_2_IndSubTable table tr:nth-child(n) td {
+	border-style:none !important;
+	white-space: normal;
+}
+.AD_2_IndSubTable_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
+
+
+/*** AD 3 **********************************************************************/
+.AD_3_Generic  {
+	border-style:none;
+	white-space: normal;
+}
+.AD_3_table  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.AD_3_table  tr:nth-child(n) th {
+	color: #000000 ;
+    /*text-align: center;*/
+  /*  border: 1px solid #778899;*/
+    padding: 0;
+    border:1px solid #778899;
+}
+.AD_3_table table tr:nth-child(2) th:nth-child(2) {
+    border-left:1px solid #778899;
+} 
+/*
+.AD_2_table tr:nth-child(n) td {
+    font-size: 90%; 
+}  */
+   
+.AD_3_title {   
+ 	color: #800000 ;
+    /*text-align: center;*/
+    /*text-transform: uppercase;
+    font-weight: bold;*/
+    white-space: normal;
+    margin: 0px;
+    border: none;
+}
+
+.AD_3_title #IDENT {
+    color: #000000;
+}
+a[id*="IDS_TABLE"] + table  {
+    border:1px solid #778899;/* !important;*/
+}
+
+
+.AD_3_table  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+	padding:0;
+	border-spacing: 0;
+}
+
+.AD_3_table table td:first-child,
+.AD_3_table table th:first-child {
+	border-left:none;
+}
+
+.AD_3_table table tr:first-child th,
+.AD_3_table table tr:first-child td  {
+	border-top:none;
+}
+	
+.AD_3_table table td:last-child, 
+.AD_3_table table th:last-child {
+	border-right:none;
+}
+
+.AD_3_table table tr:last-child td {
+	border-bottom:none;
+}
+
+
+/*.AD_2_title {   
+ 	color: #800000 ;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: normal;
+}*/
+
+.AD_3_table .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899;
+	padding:0;
+	border-spacing: 0;
+}
+
+.AD_3_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
+.AD_3_IndSubTable  tr:nth-child(n) td {
+	border:1px solid #778899;/* !important;*/
+	color: #000000 ;
+    /*text-align: center;*/
+}
+.AD_3_IndSubTable  tr:nth-child(n) th {
+	background-color: #b8b8b8;
+	color: #000000 ;
+    /*text-align: center;*/
+    border:none;
+}
+.AD_3_IndSubTable .Table-row-type-1 {
+    background-color: #b8b8b8;
+    border: 1px solid #778899 !important;
+}
+.AD_3_IndSubTable table tr:nth-child(n) td {
+	border-style:none !important;
+	white-space: normal;
+}
+.AD_3_IndSubTable_title thead {   
+ 	color: #000000 ;
+    /*text-align: center;*/   
+}
+.a[id*="_TITLE"] {
+   border:none !important;
+   border-style: none;
+}
 /*********************************************************************************/
 /*** AD 2.1 **********************************************************************/
 .AD_2_1_Generic  {
@@ -2409,50 +4111,6 @@ div[id="ENR-4.4"] table > tbody > tr > td:nth-of-type(2) {
 .AD_2_1_title thead {   
  	color: #000000 ;
     /*text-align: center;*/   
-}
-/*** AD 4 **********************************************************************/
-.AD_4  {
-	border-style:none;
-	white-space: normal;
-}
-.AD_4_table  tr:nth-child(n) td {
-	border:1px solid #778899;/* !important;*/
-	color: #000000 ;
-    /*text-align: center;*/
-}
-.AD_4_title {   
- 	color: #800000 ;
-    /*text-align: center;*/
-    text-transform: uppercase;
-    /*font-weight: bold;*/
-    white-space: normal;
-}
-.AD_4_title td br {
-    display:none;
-}   
-.AD_4_title tr:first-child td {   
-   /*  text-align: center !important; */
-}
-/*
-.AD_4_IndSubTable  tr:nth-child(n) td {
-	border:1px solid #778899;
-	color: #000000 ;
-    text-align: center;
-}*/
-.AD_4_IndSubTable .Table-row-type-1 {
-    background-color: #b8b8b8;
-    border: 1px solid #778899 !important;
-}
-.AD_4_IndSubTable table tr:nth-child(n) td {
-	border-style:none !important;
-	white-space: normal;
-}
-.AD_4_IndSubTable thead {   
- 	color: #000000 ;
-    /*text-align: center;*/   
-}
-a[id="ad_4_TABLE"] + table td {
-    border: 1px solid #778899 !important;
 }
 /*********************************************************************************/
 /************************** TH NEL CASO DI CANCELLAZIONE INTERA TABELLA **********/
@@ -2517,8 +4175,7 @@ a[id="ad_4_TABLE"] + table td {
 .AD_1_4_IndSubTable th,
 .AD_1_5_IndSubTable th,
 .AD_2_IndSubTable th,
-.AD_2_1_IndSubTable th,
-.AD_4_IndSubTable th, {   
+.AD_2_1_IndSubTable th {   
  	background-color: #b8b8b8;
     border: 1px solid #778899 !important;
 }
@@ -2810,12 +4467,21 @@ a[id="AIC_HEADER"] + table td {
     border: none !important;
 }
 
-a[id="AIC_HEADER"] + table tr:last-child {
-	border: 1px solid !important;
+a[id="AIC_HEADER"] + table tr:nth-child(2),
+a[id="AIC_HEADER"] + table tr:nth-child(3) {
+	border-bottom: 1px solid ;
 }
 
 a[id="AIC_HEADER"] + table table tr:last-child {
 	border: none !important;
+}
+
+a[id="AIC_HEADER"] + table .col1,
+a[id="AIC_HEADER"] + table .col3{
+	width: 33%
+}
+a[id="AIC_HEADER"] + table .col2{
+	width: 34%
 }
 
 /** END setting for AIC header: remove border in AIC header **/
@@ -2825,12 +4491,21 @@ a[id="SUPA_HEADER"] + table td {
     border: none !important;
 }
 
-a[id="SUPA_HEADER"] + table tr:last-child {
-	border: 1px solid !important;
+a[id="SUPA_HEADER"] + table tr:nth-child(2),
+a[id="SUPA_HEADER"] + table tr:nth-child(3) {
+	border-bottom: 1px solid ;
 }
 
 a[id="SUPA_HEADER"] + table table tr:last-child {
 	border: none !important;
+}
+
+a[id="SUPA_HEADER"] + table .col1,
+a[id="SUPA_HEADER"] + table .col3{
+	width: 33%
+}
+a[id="SUPA_HEADER"] + table .col2{
+	width: 34%
 }
 
 /** END setting for SUP header: remove border in SUP header **/
@@ -2856,7 +4531,7 @@ a[id="SUPA_HEADER"] + table table tr:last-child {
 }
 .titlepage .AIC_IndSubTable .Table-row-type-1,
 .titlepage .SUP_IndSubTable .Table-row-type-1 {
-    background-color: #b8b8b8;
+    /* background-color: #b8b8b8; */
     border: 1px solid #778899 !important;
 }
 .titlepage .AIC_IndSubTable table tr:nth-child(n) td ,
@@ -2868,5 +4543,65 @@ a[id="SUPA_HEADER"] + table table tr:last-child {
 .titlepage .SUP_IndSubTable thead {   
  	color: #000000 ;
     /*text-align: center;*/   
+}
+
+/** The following settings define header colour for AICs **/
+
+#AIC_ROW1_Administrative,
+#AIC_ROW2_Administrative,
+#AIC_ROW3_Administrative,
+#AIC_ROW4_Administrative,
+#AIC_ROW1_INT_Administrative,
+#AIC_ROW2_INT_Administrative {
+background-color: #FFFFFF !important;
+}
+
+#AIC_ROW1_ATC,
+#AIC_ROW2_ATC,
+#AIC_ROW3_ATC,
+#AIC_ROW4_ATC,
+#AIC_ROW1_INT_ATC,
+#AIC_ROW2_INT_ATC {
+background-color: #ffff99 !important;
+}
+
+#AIC_ROW1_Safety,
+#AIC_ROW2_Safety,
+#AIC_ROW3_Safety,
+#AIC_ROW4_Safety,
+#AIC_ROW1_INT_Safety,
+#AIC_ROW2_INT_Safety {
+background-color: #ffcccc !important;
+}
+
+#AIC_ROW1_Danger,
+#AIC_ROW2_Danger,
+#AIC_ROW3_Danger,
+#AIC_ROW4_Danger,
+#AIC_ROW1_INT_Danger,
+#AIC_ROW2_INT_Danger{
+background-color: #ccaaff !important;
+}
+
+#AIC_ROW1_Maps,
+#AIC_ROW2_Maps,
+#AIC_ROW3_Maps,
+#AIC_ROW4_Maps,
+#AIC_ROW1_INT_Maps,
+#AIC_ROW2_INT_Maps{
+background-color: #99cc99 !important;
+}
+
+/** The following settings define header colour for SUPs and SUP Checklists **/
+
+#SUP_ROW1,
+#SUP_ROW2,
+#SUP_ROW3,
+#SUP_ROW4,
+#SUP_ROW_INT1,
+#SUP_ROW_INT2,
+#SUP_ROW_INT3,
+#SUP_ROW_INT4 {
+background-color: #ffff99 !important;
 }
 /*********************************************************************************/

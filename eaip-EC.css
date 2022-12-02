@@ -54,7 +54,7 @@ td {
   border-color: #999999;
   border-style: solid;
   border-width: 0px;
-  margin: 20px;
+  margin: 5px;
   padding: 2px;
 }
 th {
@@ -180,7 +180,7 @@ li.menu-on {
    ------------------------------------------------------------------------------------------------
 */
 .H1 {
-  margin: 0px 0 20px 0;
+  margin: 0px 0px 5px 0px;
 }
 h2 {
     margin: 4px 4px 4px 0px;
@@ -497,8 +497,8 @@ html>head:first-child+body .Sub-script, html>head:first-child+body .Super-script
   border-bottom-width: 0px;
 }
 .IndSubTableMist th, .IndSubTable td {
-  border-right: none;
-  padding: 2px;
+  /* border-right: none; */
+  /* padding: 2px; */
 }
 
 .defaultTable {
