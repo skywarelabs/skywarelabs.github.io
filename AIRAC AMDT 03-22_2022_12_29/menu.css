@@ -1,0 +1,384 @@
+/************************************************************************************************
+    @Copyright (c) IDS AIRNAV, all rights reserved.
+*************************************************************************************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: #000000;
+  margin: 0 0 0 0;
+  height: 100%;
+  padding: 0 0 0 0;
+}
+body.tab {
+	padding-top: 0;		/*false value for WinIE4/5/6 */
+}
+html>head:first-child+body.tab {
+	padding-top: 20px;	/* intended value for better browsers */
+}
+
+/* base font size */
+body, p, li, td, th {
+	font-size:    x-small;	/* false value for WinIE4/5/6 */
+}
+html>head:first-child+body, html>head:first-child+body p, html>head:first-child+body li, html>head:first-child+body td, html>head:first-child+body th {
+	font-size:    small;	/* intended value for better browsers */
+}
+
+div.tab {
+	padding: 7px 0 0 4px;
+	margin: 0;
+	background: #cfcfdf;
+	border-bottom: 1px solid gray;
+	white-space: nowrap;
+	text-align: left;
+	font: bold 11px Arial, sans-serif;
+	position: fixed;
+	top: 0;
+	bottom: auto;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: auto;
+}
+
+p.tab-amdt {
+	padding: 3px;
+	margin: 0;
+	font-size: 0.85em;
+}
+
+a#current {
+	color: black;
+	background: white;
+	border-bottom-color: white;  /*does not work in IE5 */
+}
+
+div.tab a {
+	color: #00008b;
+	text-decoration: none;
+	background: #CFCFDF;
+	padding: 2px 2px 0;
+	margin: 0 4px 0 0;
+	border: 1px solid gray;
+	border-bottom-color: gray;
+}
+
+div.tab a:visited, div.tab a.visited {
+	color: #0000ff;
+	text-decoration: none;
+	background: #CFCFDF;
+	padding: 2px 2px 0;
+	margin: 0 4px 0 0;
+	border: 1px solid gray;
+	border-bottom-color: gray;
+}
+
+DIV.
+{
+    PADDING-LEFT: 3px;
+    PADDING-TOP: 2px;
+  /*FONT-WEIGHT: normal;*/
+    WHITE-SPACE: nowrap;
+}
+
+h1, h2 {
+	text-align: center;
+	margin: 4px;
+	padding: 0px;
+}
+h1 {
+	font-size: 1em;
+}
+h2 {
+	font-weight: normal;
+	font-size: 0.85em;
+}
+h2.date {
+	font-size: 150%;
+	font-weight: bold;
+	font-style: normal;
+}
+abbr, acronym {
+  cursor: help;  /* IE 5.0 doesn't do this by itself */
+}
+
+a:link, a:visited {
+  color: #0000ff;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+div.H1, div.H2, div.H3, div.H4, div.H5, div.H6, div.H7 {
+  font-size: 1.0em;
+  /*font-weight: normal;*/
+  padding-left: 3px;
+  padding-top: 2px;
+/* no padding-bottom, because it breaks the <a> in IE5 !! */
+  white-space: nowrap;
+}
+
+div.H1 {
+  margin-left: 0px;
+  background-color: #00008b;
+  font-weight: bold;
+}
+
+DIV.amdtGroupTitle
+{
+    PADDING-RIGHT: 0px;
+    BORDER-TOP: black 0px solid;
+    PADDING-LEFT: 3px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 0.9em;
+    PADDING-BOTTOM: 0px;
+    MARGIN-LEFT: 0px;
+    CURSOR: pointer;
+    PADDING-TOP: 2px;
+    WHITE-SPACE: nowrap;
+    BACKGROUND-COLOR: #cfcfdf
+}
+
+.H1, .H1 a:link, .H1 a:visited {
+	color:#ffffff;
+	font-weight: bold;
+}
+.H1 a:hover, .H1 a:active {
+	color:#ff0000;
+	font-weight: bold;
+}
+.H2 {
+  margin-left: 0px;
+  cursor: pointer;
+}
+.H3 {
+  margin-left: 10px;
+}
+.H4 {
+  margin-left: 20px;
+}
+.H5 {
+  margin-left: 30px;
+}
+.H6 {
+  margin-left: 40px;
+}
+.H7 {
+  margin-left: 50px;
+}
+.Plus {
+	font-family: monospace;
+	font-size: 0.9em;
+	margin-right: 2px;
+	color: #0000ff;
+}
+.Number {
+	  font-size: 0.9em;
+	  white-space: nowrap;
+}
+
+/************************ Supplements tables *********************/
+.SupTable { 
+	width:100%
+}
+
+.SupTable td, .SupTable th {
+	font-size: xx-small; /* Value for IE */	
+	vertical-align: top;
+	margin: 0;
+}
+.SupTable-Period-td {
+	text-align:right;
+}
+html>head:first-child+body .SupTable td, html>head:first-child+body th {
+	font-size: 0.85em; /* Value for Mozilla*/
+}
+
+
+.SupTable-Subject-th, .SupTable-Subject-td {
+	
+}
+.SupTable-Row td {
+	border-top: solid black 1px;
+}	
+
+.SupSeriesTitle {
+	border-top: solid black 1px;
+}
+
+/**************************** Floating menu ***********************/
+
+div.closeButton {
+	text-align: right;
+	/*text-align: right;*/
+	color: black;
+}
+
+div.closeButton a {
+	color: black;
+	border: none;
+	background: #ddddee;
+}
+
+img {
+	border: none;
+}
+
+div.closeButton a:visited {
+	color: black;
+}
+
+/************************** AMDT menu ***********************************/
+th.amdtArrow {
+	/*font-family: Symbol;
+	font-size: larger;*/
+	vertical-align: middle; 
+}
+
+img.amdtArrow {
+    float: left;
+    margin-right: 2px;
+}
+
+.amdtBar {
+	border-left: solid 0 black;
+	margin: 0 0 0 25px;
+	padding-left: 4px;
+	/*font-size: 0.9em;*/
+}
+
+.amdtItemDeleted {
+    margin: 0;
+}
+
+.amdtGroupTitle td{
+	border-top: solid black 1px;
+}
+
+.amdtGroupAbstract {
+	text-align: left;
+	margin-left: 0px;
+	padding: 2px 2px 2px 2px;;
+	white-space: normal;
+	font-weight: normal;
+	font-size: 0.85em;
+}
+
+.amdtGroupDetails {
+    padding: 0 0 4px 20px;
+}
+
+.amdtSectTitle td{
+	border-top: dashed black 1px;
+}
+
+.amdtTable-Row td{
+	padding: 1px;
+}
+
+.amdtIntro {
+	text-align: left;
+	 font-style: italic;
+}
+
+.amdtLink {
+    padding: 0 0 0 0.1em;
+}
+
+/************************** Commands frame ***********************************/
+body.commands {
+	background-color: #cfcfdf;
+	font-size: 12px;
+}
+html,body {
+	height: 100%;
+}
+.commands div, .commands p, .commands li, .commands td, .commands th {
+	font-size: 12px;
+	background-color: #cfcfdf;
+}
+.commands p {
+	white-space: nowrap;
+}
+.commands td {
+	vertical-align: top;
+	padding: 0 6px 0 6px;
+	margin: 0;
+}
+.commands td.border {
+	border-right: solid 2px #99a;
+}
+
+p.command {
+	padding: 0;
+	margin: 0;
+	height: 18px;
+	vertical-align: baseline;
+}
+.command img {
+	border: none;
+	vertical-align: middle;
+	height: 16px;
+	width: 16px;
+	margin: 1px 4px 1px 1px;
+}
+.command img.flag {
+	height: 10px;
+	width: 15px;
+	margin: 1px 4px 2px 1px;
+}	
+img.org {
+	border: none;
+	height: 17px;
+	width: 32px;
+	margin: 1px 4px 1px 1px;
+}
+div.noscript {
+	background: white ; 	padding: 7px ; 	margin: 4px ; 	border: 3px dotted red;
+}
+
+div.noscript h1{
+	color:red;	font-size:250%;
+} 
+
+div.noscript p {
+	font-size:150%;  	white-space: normal;
+}
+
+div.NothingHereToSee {
+	display: none;
+}
+DIV.Hx
+{
+    PADDING-LEFT: 3px;
+    FONT-WEIGHT: normal;
+    /*FONT-SIZE: 0.9em;*/
+    PADDING-TOP: 2px;
+    WHITE-SPACE: nowrap
+}
+#amdtGroups DIV.H1
+{
+    CURSOR: pointer
+}
+#amdtGroups DIV.Hx
+{
+    CURSOR: pointer
+}
+DIV.level
+{
+    MARGIN-LEFT: 8px
+}
+.visibile{
+	display:inline;
+	visibility: visible;
+}
+
+.invisibile{
+	display:none;
+	visibility: hidden;
+}
+.linkRootIdent{
+	color:#0000ff;
+}

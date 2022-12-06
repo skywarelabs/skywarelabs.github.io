@@ -1,0 +1,21 @@
+/************************************************************************************************
+    @Copyright (c) IDS AIRNAV, all rights reserved.
+*************************************************************************************************/
+.AmdtInsertedAIRAC, .AmdtInsertedNon-AIRAC {
+}
+ins.AmdtInsertedAIRAC, ins.AmdtInsertedNon-AIRAC {
+	text-decoration: none; 
+}
+.AmdtDeletedAIRAC, .AmdtDeletedNon-AIRAC {
+	display: none;
+}
+
+.deleted, .deletedAIRAC, .deletedNon-AIRAC{
+	display: none;
+}
+
+.added, .addedAIRAC, .addedNon-AIRAC, .changed, .changedAIRAC, .changedNon-AIRAC  {
+	text-decoration: none !important;
+	background:none !important;
+}
+

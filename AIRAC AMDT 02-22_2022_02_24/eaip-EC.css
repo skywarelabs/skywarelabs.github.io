@@ -1,0 +1,765 @@
+/************************************************************************************************
+    @Copyright (c) IDS AIRNAV, all rights reserved.
+*************************************************************************************************/
+body {
+  background-color: white;
+}
+table {
+  background-color: #f0f0f0;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-collapse: collapse ;
+}
+abbr, acronym {
+  cursor: help;  /* IE 5.0 doesn't do this by itself */
+/*  color: #666666; */
+/*  font-variant: small-caps; don't change the case: some abbreviations are in lower case */
+  letter-spacing: 0.1em;
+  border-bottom: 1px dotted black;  /* IE 5.0 doesn't do this by itself */
+}
+/* base font size */
+/*body, div, p, li, td, th 
+{
+	white-space: normal;
+	font-size:    x-small;	/* false value for WinIE4/5/6 */
+/*}
+html>head:first-child+body, html>head:first-child+body  div, html>head:first-child+body p, html>head:first-child+body li, html>head:first-child+body td, html>head:first-child+body th {
+	font-size:    small; }	/* intended value for better browsers */
+
+
+body, p, li {
+  font-family: Arial Unicode MS, Arial, Helvetica, sans-serif; /* Note: Verdana doesn't contain some Unicode characters that we need */
+}
+td, th {
+  font-family: Arial Unicode MS, Arial, Helvetica, sans-serif; /* note Verdana: too large */
+  /* zzfont-family: Lucida Sans Unicode, monospace; */
+empty-cells: show ;
+}
+
+/*
+a:link {color: #0000ff; text-decoration: underline; }
+a:active {color: #0000ff; text-decoration: underline; }
+a:visited {color: #0000ff; text-decoration: underline; }
+a:hover {color: #0000ff; text-decoration: underline; }
+*/
+/*
+   ------------------------------------------------------------------------------------------------
+   Block Elements 
+   ------------------------------------------------------------------------------------------------
+*/
+td {
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0px;
+  margin: 20px;
+  padding: 2px;
+}
+th {
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0px;
+  margin: 0px;
+  padding: 2px;
+}
+p, div {
+  margin-top: 1em;
+}
+
+/*
+   ------------------------------------------------------------------------------------------------
+   CSS Classes
+   ------------------------------------------------------------------------------------------------
+*/
+/* Floating menu */
+#floatingMenu {
+	position: absolute; /* default for broken browsers */
+	top: 3px;
+	right: 4px;
+	margin: 0;
+
+	background: #ddddff;
+	border: outset #ccccff 1px;
+	padding: 0px;
+	text-align: left;
+}
+body > div#floatingMenu {
+	position: fixed; /* only real CSS-compliant browsers understand this (not IE5.5) */
+	z-index: 99 ;
+}
+#floatingLabel {
+	padding-left: 3px;
+	margin-right: 3px;
+}
+#floatingMenu ul {
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+li.menu {
+	font-size: 10px;
+}
+li.menu-on {
+	list-style: disc;
+}
+.menu a {
+	text-decoration: none;
+}
+.menu a:visited {
+	color: blue;
+}
+.menu a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+/*
+   ------------------------------------------------------------------------------------------------
+   The "Front page" div element
+   ------------------------------------------------------------------------------------------------
+*/
+.FrontPage {
+  color: white;
+  text-align: center;
+  background-color: blue;
+  padding: 10px 20px 10px 20px;
+}
+.logo {
+}
+.consult-notam {
+	text-transform: uppercase;
+}
+
+/*
+   ------------------------------------------------------------------------------------------------
+   The GEN/ENR/AD section starts
+   ------------------------------------------------------------------------------------------------
+*/
+.SectionStart {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #00008b;
+  padding: 20px 20px 20px 20px;
+}
+
+/*
+   ------------------------------------------------------------------------------------------------
+   Circular Header Customisation based on Subject attribute
+   ------------------------------------------------------------------------------------------------
+*/
+.Admin {
+  background-color: #ffffff;
+  color:#000000;
+}
+
+.ATC {
+  background-color: #ffff99;
+  color:#000000;
+}
+
+.Safety {
+  background-color: #ffcccc;
+  color:#000000;
+}
+
+.Danger {
+  background-color: #ccaaff;
+  color:#000000;
+}
+
+.ChartsMaps {
+  background-color: #99cc99;
+  color:#000000;
+}
+
+/*
+   ------------------------------------------------------------------------------------------------
+   Handle the H1 on the "front" page
+   ------------------------------------------------------------------------------------------------
+*/
+.H1 {
+  margin: 0px 0 20px 0;
+}
+h2 {
+    margin: 4px 4px 4px 0px;
+}
+
+h4 {
+    margin-bottom: 4px;
+}
+
+body {
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*
+   ------------------------------------------------------------------------------------------------
+   Titles & the outlining mechanism
+   ------------------------------------------------------------------------------------------------
+*/
+caption {
+  color: maroon;
+  text-align: left;
+}
+.Title, .TitleAD {
+  color: maroon;
+  text-transform: uppercase;
+  text-align: left;
+  white-space: pre;
+}
+.TitleAD {
+  background-color: #bbbbbb;
+  padding: 4px 0px; 
+}
+.Outline {
+  color: maroon;
+  background-color: #00ccff;
+  text-transform: uppercase;
+  text-align: left;
+}
+span.Outline {
+/*  border: 1px solid black; */
+}
+.Sub-title {
+  color: maroon;
+  text-align: left;
+}
+
+
+/*
+   ------------------------------------------------------------------------------------------------
+   Table of Contents
+   ------------------------------------------------------------------------------------------------
+*/
+.toc-block {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.toc {
+	margin: 4px;
+	font-size: 0.9em;
+}
+h3.toc, h4.toc {
+	font-weight: normal;
+}
+h4.toc {
+	padding-left: 20px;
+	margin-top: 0px;
+}
+/*
+   ------------------------------------------------------------------------------------------------
+   Graphics & their titles classes
+   ------------------------------------------------------------------------------------------------
+*/
+img {
+	vertical-align: middle;
+	border-width: 0px;
+}
+
+.Figure-Left {
+  color: maroon;
+  text-align: left;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.Figure-Right {
+  color: maroon;
+  text-align: right;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.Figure-Center {
+  color: maroon;
+  text-align: center;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.Figure-title {
+  color: maroon;
+  margin-top: 2pt;
+  margin-bottom: 0pt;
+  padding-right: 5px;
+}
+.Graphic {
+  text-align: center;
+  border: 2px solid black;
+  margin-top: 3pt;
+  margin-bottom: 0pt;
+}
+.graphic-box {
+	margin: 0 0 0 60px;
+}
+.icon {
+	padding: 0 4px 0 4px;
+}
+
+.FigureNumbering {
+  color: black;
+}
+
+/*
+   ------------------------------------------------------------------------------------------------
+   Block elements classes
+   ------------------------------------------------------------------------------------------------
+*/
+.Address {}
+
+.Address-part {
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  text-indent: 0pt;
+}
+.Address-post, .Address-post p {
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  white-space: pre;
+}
+td p, th p, td div, th div, li p, li div {
+  margin-top: 0pt;
+  margin-bottom: 0pt;
+  text-indent: 0pt;
+}
+.Note {
+  font-style: italic;
+}
+.NilNote {
+  margin: 20px;
+  padding: 10px;
+  background-color: #eeeeee;
+  font-style: italic;
+}
+.HideInHTML {
+  display: none;
+}
+
+/* default for Amendments */
+.AmdtDeletedAIRAC, .AmdtDeletedNon-AIRAC {
+	text-decoration: line-through;
+}
+
+.line {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/*
+   ------------------------------------------------------------------------------------------------
+   Inline elements classes
+   ------------------------------------------------------------------------------------------------
+*/
+.Unknown {
+  color: red;
+  background-color: #ffcc00;
+}
+.Missing-id {
+  color: red;
+  background-color: #ffcc00;
+}
+.Date-time {
+  color: blue;
+}
+.Equation {
+  font-family: monospace;
+  font-weight: bold;
+}
+.Literal {
+  font-family: monospace;
+  color: white;
+  background-color: gray;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  padding-top: 2pt;
+  padding-bottom: 2pt;
+}
+acronym.Note {
+  /*font-size: 0.7em;*/
+  font-size: xx-small; /* IE 5 and 6 value*/
+  vertical-align: text-top; /* IE 5 and 6 does not work*/
+  font-variant: normal;
+  letter-spacing: normal;
+  font-style: normal;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.Underline {
+	text-decoration: underline;
+}
+
+html>head:first-child+body acronym.Note {
+	font-size: 0.7em; /* Mozilla value*/
+}
+
+.ADName {
+  text-align: center;
+  font-weight: bold;
+}
+.Sub-script, .Super-script {
+	font-size: xx-small; /* IE 5 and 6 value*/
+}
+html>head:first-child+body .Sub-script, html>head:first-child+body .Super-script{
+	font-size: 0.83em; /* Mozilla value*/
+}
+.Sub-script {
+	vertical-align: sub;
+}
+.Super-script {
+	vertical-align: super;
+}
+
+/*
+   ------------------------------------------------------------------------------------------------
+   List Styles
+   ------------------------------------------------------------------------------------------------
+*/
+.strikethrough {
+    text-decoration: line-through;
+}
+.Numbered {
+  list-style: decimal;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.Lower-Alpha {
+  list-style: lower-alpha;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+
+.Upper-Alpha {
+  list-style: upper-alpha;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.Lower-Roman {
+  list-style: lower-roman;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.Upper-Roman {
+  list-style: upper-roman;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.Itemised {
+  list-style: disc;
+  margin-top: 2pt;
+  margin-bottom: 2pt;
+}
+.abbr-title {
+	background: #cccccc;
+	font-weight: bold;
+}
+.abbr-detail {
+	font-size: 0.8em;
+}
+.abbr-detail-light {
+	background: #f0f0cc;
+	font-size: 0.8em;
+}
+.TChart {
+	margin: 0px;
+	height: 0px;
+}
+
+.BChart {
+	margin: 0px;
+	height: 0px;
+}
+.IndTable {
+}
+.IndTable td {
+  padding: 0px;
+}
+.IndSubTable {
+  border: none;
+  margin-top: 0px;
+}
+.IndSubTable th, .IndSubTable thead td {
+  border-bottom-width: 1px;
+}
+.IndSubTable th, .IndSubTable td {
+  border-right: none;
+  padding: 2px;
+}
+
+.IndSubTableMist {
+  border: none;
+  margin-top: 0px;
+}
+.IndSubTableMist th, .IndSubTableMist thead td {
+  border-bottom-width: 0px;
+}
+.IndSubTableMist th, .IndSubTable td {
+  border-right: none;
+  padding: 2px;
+}
+
+.defaultTable {
+  border: none;
+  margin-top: 0px;
+}
+.defaultTable th, .defaultTable thead td {
+  border-bottom-width: 1px;
+}
+.defaultTable th, .defaultTable td {
+  border-right: none;
+  padding: 2px;
+}
+/************************ Supplements tables *********************/
+.SupTable { 
+	border: solid black 1px;
+}
+.SupTable td, .SupTable th {
+	border-bottom: solid black 1px;
+}
+
+/************************ AMENDMENTS *********************/
+.AmdtTable { /* Amendments tables */
+	width: 100%;
+	margin: 10px 0 10px 0;
+}
+.AmdtTable td, .AmdtTable th {
+	text-align: center;
+	border-width: 1px;
+	border-color: #dddddd;
+}
+/* test for partial AD hiding
+.ADblock {
+	display: block;
+}
+.ADblock .TitleAD {
+}
+.AmdtDeleted div, .AmdtDeleted p, .AmdtDeleted hr {
+	display: none;
+}
+*/
+
+/*
+   ------------------------------------------------------------------------------------------------
+   ENR, Navaid & Designated point table element classes
+   ------------------------------------------------------------------------------------------------
+*/
+.ENR-table {
+  border-color: #999999;
+  margin: 5px;
+}
+
+/* Table row types */
+.Table-row-type {
+  background-color: #ffffff;
+  border-color: black;
+}
+.Table-row-type {
+  background-color: #ffffff;
+  border-color: black;
+}
+.Table-row-type-1 {
+  background-color: #aaaacc;
+  border-color: black;
+}
+.Table-row-type-2 {
+  background-color: #dddddd;
+  border-color: black;
+}
+.Table-row-type-3 {
+  background-color: #eeeeee;
+  border-color: black;
+}
+.Table-row-type-3 th, .Table-row-type-3 td {
+  border-left: 1px solid #dddddd;
+}
+.hspace td {
+  border-top: 1px solid #dddddd;
+}
+.Remark-title {
+  text-decoration: underline;
+  font-style: italic;
+}
+.Route-designator {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+td.btop, th.btop {border-top: 1px solid #dddddd}
+td.bbottom, th.bbottom {border-bottom: 1px solid #dddddd}
+td.bleft, th.bleft {border-left: 1px solid #dddddd}
+td.bright, th.bright {border-right: 1px solid #dddddd}
+
+/* Upper and lower presentation*/
+.UpperAndLower {
+	text-align: center;
+}
+.UpperAndLower table{
+	margin: 0 auto;
+	border: 0;
+	text-align: center; /* IE doesn't inherit centering... */
+	background: inherit;
+}
+td.Upper {
+	border: 0;
+	border-bottom: solid black 1px;
+}
+td.UpperExpanded
+{
+	border: 0;
+	border-bottom: solid black 1px;
+               border-left:0;
+               border-right:0;
+}
+
+td.Lower {
+	border: 0;
+}
+
+td.LowerExpanded {
+	border: 0;
+	border-left:0;
+               border-right:0;
+}
+
+td.UpperLowerExpandedSeperator
+{
+	border: 0;
+	border-left:0;
+               border-right:0;
+}
+
+th div table tbody tr td {
+	font-weight: bold; /* IE doesn't inherit the style of the th */
+}
+
+.expandedTrackColumn {
+width:100px;
+}
+
+
+
+
+/* cell borders */
+.colsep-0 th, .colsep-0 td, tr th.colsep-0, tr td.colsep-0 { border-right-width: 0px; }
+.colsep-1 th, .colsep-1 td, tr th.colsep-1, tr td.colsep-1 { border-right-width: 1px; }
+.rowsep-0 th, .rowsep-0 td, tr th.rowsep-0, tr td.rowsep-0 { border-bottom-width: 0px; }
+.rowsep-1 th, .rowsep-1 td, tr th.rowsep-1, tr td.rowsep-1 { border-bottom-width: 1px; }
+
+/*
+   ------------------------------------------------------------------------------------------------
+   eAIC and eSUP classes
+   ------------------------------------------------------------------------------------------------
+*/
+
+div.frontPage table {
+	color: white;
+}
+.AIC-SUP-title {
+	background-color: transparent;
+	border: none;
+}
+.AIC-SUP-contact-column {
+	width: 30%;
+}
+.AIC-SUP-country-column {
+	width: 40%;
+}
+.AIC-SUP-doc-column {
+	width: 30%;
+}
+.AIC-SUP-contact {
+	text-align: left;
+	text-transform: none;
+}
+.AIC-SUP-country {
+}
+.AIC-SUP-doc p {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.Contact {
+}
+.eAIP-reference {
+  margin: 20px;
+  padding: 10px;
+  background-color: #eeeeee;
+  font-style: italic;
+}
+
+/* ENR 3 Route tables - CSS entries for all ENR-tables located inside ENR-3 documents */
+div[id^="ENR-3"] table[class^="ENR-table"] { width: 95%; border-width: 0px; margin-top:15px; margin-bottom: 10px; margin-left:auto; margin-right:auto; }
+div[id^="ENR-3"] table[class^="ENR-table"] > thead > tr:nth-of-type(4) > th:nth-of-type(1)    { width: 7.5%; }/* RS direction forwards cell */
+div[id^="ENR-3"] table[class^="ENR-table"] > thead > tr:nth-of-type(4) > th:nth-of-type(2)    { width: 7.5%; }/* RS direction backwards cell */
+div[id^="ENR-3"] table[class^="ENR-table"] > tbody > tr:nth-of-type(2n) > td:nth-of-type(1)    { width: 1em; text-align: center; }/*  compulsory/request rep pt */
+
+/* ENR 3.1 - Widths of the th cells in the 3rd row */
+div[id="ENR-3.1"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(1)    { width: 20%; }/* The RNP cell*/
+div[id="ENR-3.1"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(2)    { width: 10%; }/* The track cell */
+div[id="ENR-3.1"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(3)    { width: 10%; }/* The Distance cell */
+div[id="ENR-3.1"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(4)    { } /* COP cell width is not specified - */
+div[id="ENR-3.1"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(5)    { width: 10%; }/* Upper Lower limit */
+div[id="ENR-3.1"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(6)    { width: 10%; }/* MIN FL ALT cell */
+div[id="ENR-3.1"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(7)    { width: 10%; }/* Lateral limits */
+div[id="ENR-3.1"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(9)    { width: 20%; }/* The controlling units cell */
+
+/* ENR 3.2 - Widths of the th cells in the 3rd row */
+div[id="ENR-3.2"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(1)    { width: 20%; }/* The RNP cell*/
+div[id="ENR-3.2"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(2)    { width: 10%; }
+div[id="ENR-3.2"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(3)    { width: 10%; }
+div[id="ENR-3.2"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(5)    { width: 10%; }
+div[id="ENR-3.2"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(6)    { width: 10%; }
+div[id="ENR-3.2"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(8)    { width: 20%; }/* The controlling units cell */
+
+/* ENR 3.3 - Widths of the th cells in the 3rd row */
+div[id="ENR-3.3"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(1)    { width: 20%; }/* The RNP cell*/
+div[id="ENR-3.3"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(2)    { width: 10%; }
+div[id="ENR-3.3"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(3)    { width: 10%; }
+div[id="ENR-3.3"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(4)    { width: 15%; }
+div[id="ENR-3.3"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(6)    { width: 25%; }/* The controlling units cell */
+
+/* ENR 3.4 - Widths of the th cells in the 3rd row */
+div[id="ENR-3.4"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(1)    { width: 20%; }/* The RNP cell*/
+div[id="ENR-3.4"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(2)    { width: 10%; }
+div[id="ENR-3.4"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(3)    { width: 15%; }
+div[id="ENR-3.4"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(6)    { width: 15%; }
+div[id="ENR-3.4"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(9)    { width: 25%; }/* The controlling units cell */
+
+/* ENR 3.5 - Widths of the th cells in the 3rd row */
+div[id="ENR-3.5"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(1)    { width: 20%; }/* The RNP cell*/
+div[id="ENR-3.5"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(2)    { width: 10%; }
+div[id="ENR-3.5"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(3)    { width: 15%; }
+div[id="ENR-3.5"] table[class^="ENR-table"] > thead > tr:nth-of-type(3) > th:nth-of-type(6)    { width: 25%; }/* The controlling units cell */ 
+
+
+/* Upper and lower presentation*/
+.UpperAndLower {
+    text-align: center;
+}
+.UpperAndLower table {
+    margin: 0 auto; border: 0; text-align: center; /* IE doesn't inherit centering... */ background: inherit;
+}
+td.Upper {
+    border: 0; border-bottom: solid black 1px; white-space: normal;
+}
+td.UpperExpanded {
+    border: 0; border-left:0; border-right:0; border-bottom: solid black 1px; white-space: normal;
+}
+td.Lower {
+    border: 0; white-space: normal;
+}
+td.LowerExpanded {
+    border: 0; border-left:0; border-right:0; white-space: normal;
+}
+td.UpperLowerExpandedSeperator {
+    border: 0; border-left:0; border-right:0; white-space: normal;
+}
+
+/* Cover page section border presentation */
+.AmdtCoverSectionContent {
+    width: 99%;
+    border: 1px solid white;
+    padding: 2px 0px 2px 0px;
+}
