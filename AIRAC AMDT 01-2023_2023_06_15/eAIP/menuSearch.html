@@ -1,0 +1,40 @@
+<!DOCTYPE html  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang='en' xml:lang='en'>
+<head>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="copyright" content="IDS AIRNAV"/>
+	<meta name="description" content="AIP for Specimen">
+	<meta name="robots" content="all">
+	<title>Menu Search</title>
+	<base target='eAISContent'/>
+	<link rel='stylesheet' href='../menu.css' type='text/css'/>
+	<script src='../menu.js' type='text/javascript'><!--This comment prevents a bug in IE6--></script>
+	<script src='../commands.js' type='text/javascript'><!--This comment prevents a bug in IE6--></script>
+	<script src='../amendments.js' type='text/javascript'><!--This comment prevents a bug in IE6--></script>
+	<script src="../searchIndex.js" type="text/javascript"><!--This comment prevents a bug in IE6--></script>
+	<script src="../searchEngine.js" type="text/javascript"><!--This comment prevents a bug in IE6--></script>	
+</head>
+<body id= "bodysearch" class='tab' onload='toggleAmendment();'>
+<div class='tab'>
+		<a target='_self' title='Aip Table of Contents' href='../eAIP/menu.html' onClick="selectTab('tab1');">AIP</a>
+		<a target='_self' title='List of Changes' href='../eAIP/amdt.html' onClick="selectTab('tab2');">AMDT</a>
+		<a target='_self' title='List of AIP Supplements' href='../eSUP/menu.html' onClick="selectTab('tab3');">SUPs</a>
+		<a target='_self' title='List of Circulars' href='../eAIC/menu.html' onClick="selectTab('tab4');">AICs</a>
+		<a target='_self' title='Search Contents from AIP' href='../eAIP/menuSearch.html' id='current' onClick="selectTab('tab5');">Search</a>
+</div>
+<div id="containerFormSearchResult">
+	<form id="formSearch" method="get" autocomplete="off" action="" onsubmit="search(srchval.value); return false;">
+		<p> Search for: <input type="text" name="srchval" size="26" autocomplete="off" value=""></p>
+		<input type="submit" value="Start">
+		<input type="submit" value="Clear" onclick="srchval.value=''; removeAllElementIntoContainer(document.getElementById('containerSearchResult')); return false">		
+	</form>
+</div>
+<div name="containerSearchResult" id="containerSearchResult" style="display:none;" />
+</body>
+</html>

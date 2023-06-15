@@ -1,0 +1,200 @@
+/*
+CSS file for eAIP documentation
+$Date: 2003/10/21 14:40:53 $
+$Revision: 1.9 $
+*/
+
+body {
+	background: #ffffff;
+	margin: 10px;
+}
+
+body, td, th {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	color: #000000;
+	font-size: small;
+}
+tt {
+	font-size: 1.2em;
+}
+td p {
+	padding-bottom: 5px;
+	margin: 0px;
+}
+p, pre, div.informaltable, div.qandaset dl {
+	margin-left: 20px;
+}
+h2 {
+	font-size: 1.5em;
+	width: 100%;
+	background: #ccccff;
+	padding-left: 4px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.2em;
+	margin-bottom: 0;
+}
+h5 {
+	font-size: 1em;
+	font-style: italic;
+	margin-bottom: 0;
+}
+td h3 {
+	margin-top: 0px;
+}
+code {
+	color: #cc0000;
+	background-color: #dddddd;
+	padding: 1px 4px 1px 4px;
+
+}
+.note { /* applied to a block */
+	color: #333333;
+	background-color: #eeeeee;
+	padding: 5px 5px 5px 5px;
+	font-style: italic;
+}
+.footnote {
+	font-size: 0.85em;
+	vertical-align: top;
+}
+.discrete {
+	font-size: 0.85em;
+	font-style: italic;
+}
+.example {
+	background: #ffffcc;
+	padding-left: 30px;
+	padding-top: 1em;
+	padding-right: 4px;
+	padding-bottom: 4px;
+	margin-bottom: 0px;
+}
+ul.toc, .toc ul {
+	list-style-type: none;
+}
+ul.example {
+	padding-left: 50px;
+	padding-top: 4px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.deprecated {
+	text-decoration: line-through;
+	color: grey
+}
+/*
+.children, .parents, .attributes {
+	padding-left: 20px;
+}
+*/
+
+.elemGroup {
+}
+acronym {
+	cursor: help;
+	padding: 0px 3px 0px 2px;
+}
+table {
+	/*border: solid #000000 1px;*/
+	 border-collapse: collapse;
+}
+
+th, td {
+	vertical-align: top;
+	border-width: 1px;
+	padding: 4px;
+	background:#ccccff;
+	/*background: #ffffcc;*/
+	/*background:#d5d5d5;*/
+	/*background: lightgrey;*/
+	margin: 4px;
+}
+
+tr.question {
+	font-style: bold;
+	background: #cccccc;
+}
+
+table.elements td {
+	background: #ffffff;
+	width: 50%;
+	align: left;
+/*	border: solid 1 black; */	
+	padding: 0px;
+}
+
+table.elements {
+	width: 100%;
+}
+
+table.nav {
+	width: 100%;
+}
+
+table.nav td {
+	background: #ffffff;
+	margin: 0px;
+	padding: 0px;
+}
+
+.structure, .structure td, .structure th {
+	font-size: 0.9em;
+}
+.structure td, .structure th {
+	padding: 2px;
+}
+
+.example-tag {
+	color: #0000ff;
+}
+.example-tagname {
+	color: #ca0000;
+}
+.example-attribute {
+	color: #ff0000;
+}
+.example-value {
+	color: #000000;
+}
+
+table.Amdts th {
+	text-align: left;
+}
+pre.programlisting, thead {
+	background: #f0f0f0;	
+}
+
+/* hide off or deleted classes which might have made it through */
+.off, .deleted {
+    display: none;
+}
+
+/* Floating menu */
+#floatingMenu {
+	position: absolute; /* default for broken browsers */
+	top: 3px;
+	right: 4px;
+	margin: 0;
+
+	background: #ddddff;
+	border: outset #ccccff 1px;
+	padding: 0px;
+	text-align: left;
+}
+body > div#floatingMenu {
+	position: fixed; /* only real CSS-compliant browsers understand this (not IE5.5) */
+}
+#floatingLabel {
+	padding-left: 3px;
+	
+}
+#floatingMenu ul {
+	margin: 0 0 0 15px;
+	padding: 0;
+}
