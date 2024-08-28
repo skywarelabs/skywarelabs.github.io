@@ -4,7 +4,7 @@
 var getYOffset, floatingMenu;
 
 function moveMenu() {
-	floatingMenu.style.top = eval(getYOffset);
+	floatingMenu.style.top = eval(0);
 	setTimeout("moveMenu()", 10);
 }
 

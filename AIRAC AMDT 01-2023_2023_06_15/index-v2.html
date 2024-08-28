@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Epub Website</title>
+    <link rel="stylesheet" type="text/css" href="./v2/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="./v2/css/style.css">
+
+    <style>
+        .noselect {
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Old versions of Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+        }
+    </style>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div class="content" style="overflow: hidden;">
+        <div class="split-b0 a" style="min-width: 300px; width: 300px !important; height: 100vh;">
+            <div class="commands">
+                <table style="background-color: #ddddee;" frame="below" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td style="vertical-align:middle; margin-top: 3px;">
+                                <img src="images/logo.png" width="80px" title="eAIP Specimen" alt="eAIP Specimen"></img>
+                            </td>
+                            <td>
+                                <h1 data-bind="html: datasource().commands.title">Specimen (NOT FOR OPERATIONAL USE)
+                                </h1>
+                                <!--ko foreach: datasource().commands.languages -->
+                                <h2 id="coverlang1" data-bind="visible: $parent.currentLanguage().name === $data.name, html: $data.coverText, click: $parent.openCover">
+                                </h2>
+                                <!--/ko-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="background-color: #ddddee;  padding-top: 3px;" width="100%" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p id="p_history" class="command">
+                                    <a href="javascript:void(0)" data-bind="attr: { href : currentLanguage().history }"
+                                        title="List previous eAIS Packages">
+                                        <img src="images/history.png" alt="" title="" height="16" width="16" />
+                                        <span style="color:blue; font-size:1.0em; margin-left: -3px;" data-bind="text : currentLanguage().historyLabel">History</span>
+                                    </a>
+                                </p>
+
+                                <p id="p_pdf" class="command">
+                                    <a href="javascript:void(0)" style="color:blue; font-size:1.0em;"
+                                        data-bind="{click: openPdf}" target="eAISContent"
+                                        alt="Open current section or document in PDF format"
+                                        title="Open current section or document in PDF format">
+                                        <img src="images/application_pdf.png" alt="" title=""></img>PDF</a>
+                                </p>
+                            </td>
+
+                            <td>
+                                <p id="p_help1" class="command">
+                                    <a href="javascript:void(0)" data-bind="click: openHelp"
+                                        style="color:blue; font-size:1.0em;" title="Help on eAIP Browsing"
+                                        alt="Help on eAIP Browsing">
+                                        <img src="images/help.png" alt="" title="" />
+                                        <span style="color:blue; font-size:1.0em; margin-left: -3px;" data-bind="text : currentLanguage().helpLabel">Help</span>
+                                    </a>
+                                </p>
+                                <p class="command">
+                                    &nbsp;
+                                </p>
+                            </td>
+                            <td>
+                                <!--ko foreach: datasource().commands.languages -->
+                                <!-- <button data-bind="click: function(data, event) { myFunction(data, event, 'param1', 'param2') }">Click me</button> -->
+
+                                <p class="command" data-bind="hidden: $parent.currentLanguage().name === $data.name">
+                                    <a data-bind="click: $parent.setCurrentLanguage.bind($data)" target="_top"
+                                        title="English" alt="English"
+                                        style="cursor: pointer; cursor: hand; color:blue; font-size:1.0em;">
+                                        <img data-bind="attr:{src: flag }" src="./images/flags/gb.gif" title="" alt=""
+                                            class="flag" />
+                                        <span style="margin-left: -3px" data-bind="text: name">EN</span>
+                                    </a>
+                                </p>
+                                <p class="command" data-bind="visible: $parent.currentLanguage().name === $data.name">
+                                    <img data-bind="attr: {src : flag }" src="./images/flags/gb.gif" title="English"
+                                        alt="English" class="flag" />
+                                    <span style="margin-left: -3px" data-bind="text: name">EN</span>
+                                </p>
+                                <!--/ko-->
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="menu">
+                <div class='tab'>
+                    <!--ko foreach: tabs-->
+                    <a class="mr-2" style="color: #0000ff"
+                        data-bind="click : $parent.setActiveTab, attr: { id: $parent.selectedTab().id === $data.id ? 'current': 'tab-' + $index() }"
+                        target='_self' title='Aip Table of Contents' href='javascript:void(0)'>
+                        <span data-bind="text: title">AIP</span>
+                    </a>
+                    <!--/ko-->
+                </div>
+                <!--ko foreach: tabs-->
+                <div style="overflow: scroll; height: 100%;" data-bind="visible: $parent.selectedTab().id === $data.id">
+                    <eaip-tab data-bind="visible: $parent.selectedTab().id === 1" params="parent: $parent"></eaip-tab>
+                    <amdt-tab data-bind="visible: $parent.selectedTab().id === 2" params="parent: $parent"></amdt-tab>
+                    <sup-tab data-bind="visible: $parent.selectedTab().id === 3" params="parent: $parent"></sup-tab>
+                    <aic-tab data-bind="visible: $parent.selectedTab().id === 4" params="parent: $parent"></aic-tab>
+                    <search-tab data-bind="visible: $parent.selectedTab().id === 5" params="parent: $parent">
+                    </search-tab>
+                </div>
+                <!--/ko-->
+            </div>
+        </div>
+        <div class="split b">
+            <iframe style="width: 100%; height: 100vh;" data-bind="attr: {src: currentContent().href}"></iframe>
+        </div>
+    </div>
+
+    <!-- eAIP tab -->
+    <template id='eaip-template'>
+        <div style="margin-bottom: 172px;">
+            <h2 data-bind='text: title' class="date"></h2>
+            <!--ko foreach: menu() -->
+            <first-level-menu-item params="parent: $parent, data: $data"></first-level-menu-item>
+            <!-- /ko-->
+        </div>
+        
+    </template>
+    <!-- /eAIP tab -->
+
+    <template id="first-level-menu-item">
+        <div id='GEN_HEADERLang1' class='H1 noselect' data-bind="click: collapse">
+            <a id='GENfr-FRplus' class='Plus' style='cursor: pointer; cursor: hand; color:#ffffff;'
+                data-bind="text: data().collapsed ? '+':'-'"></a>
+            <a href='javascript:void(0)' id='GENfr-FR' title='GEN GÉNÉRALITÉS '>
+                <span class='Number' data-bind="text: data().title"></span>
+            </a>
+        </div>
+        <div id='GENfr-FRdetails' class='level' data-bind="hidden: data().collapsed">
+            <!--ko foreach: data().children -->
+            <second-level-menu-item params="parent: $root, data: $data"></second-level-menu-item>
+            <!--/ko-->
+        </div>
+    </template>
+
+    <template id="second-level-menu-item">
+        <div class='Hx noselect' >
+            <span class="Plus">&nbsp;</span>
+            <a id='GEN 0fr-FRplus' class='Plus' style='cursor: pointer; cursor: hand;'
+                data-bind="click: collapse, text: data().collapsed ? '+':'-'"></a>
+            <a href='javascript:void(0)' id='GEN 0fr-FR' title='GEN 0 Préface '>
+                <span class='Number' data-bind="click: collapse, text: data().title"></span>
+            </a>
+        </div>
+        <div id='GEN 0fr-FRdetails' class='level' data-bind="hidden: data().collapsed">
+            <!--ko foreach: {data: data().children, as: 'child' }-->
+            <!--ko if: child.children && child.children.length > 0 -->
+            <second-level-menu-item params="parent: $root, data: child"></second-level-menu-item>
+            <!--/ko-->
+            <!--ko if: !child.children || (child.children && child.children.length === 0) -->
+            <third-level-menu-item params="parent: $root, data: child"></third-level-menu-item>
+            <!--/ko-->
+            <!--/ko-->
+        </div>
+    </template>
+
+    <template id="third-level-menu-item">
+        <div class='Hx' >
+            <span class="Plus">&nbsp;</span>
+            <span> &nbsp </span>
+            <a href='javascript:void(0)' data-bind="click : open">
+                <span class='Number' data-bind="text: data().title"></span>
+            </a>
+        </div>
+    </template>
+
+    <!-- amdt tab -->
+    <template id='amdt-template'>
+        <h2 data-bind='text: title' class="date"></h2>
+        <h2 class="amdtIntro" data-bind='text: intro'></h2>
+        <div class="amdtGroupTitle AmdtInsertedAIRAC" data-bind="style: { backgroundColor: miscellaneous().airac ? '#ffcccc' : '#ccccff' }" >
+            <a class="Plus" style="color: #000000;" href="javascript:void(0)" data-bind="text: miscellaneous().collapsed ? '+':'-'"></a>
+            <a href="javascript:void(0)" data-bind="click: miscFunc()"  style="color: #000000;" >
+                <span class="Number" data-bind="text: miscellaneous().title"> </span>
+            </a>
+        </div>
+        <!--ko foreach: menu() -->
+        <amdt-first-level-menu-item params="parent: $parent, data: $data"></amdt-first-level-menu-item>
+        <!-- /ko-->
+    </template>
+    <!-- /amdt tab -->
+
+    <template id="amdt-first-level-menu-item">
+        <div class='noselect' data-bind="click: collapse">
+            <a class='Plus' style='cursor: pointer; cursor: hand; color:#000000;'
+                data-bind="text: data().collapsed ? '+':'-'">
+            </a>
+            <a href='javascript:void(0)' data-bind="attr: {id: data().id,title: data().title}" style="color: #000000;">
+                <span class='Number' data-bind="text: data().title"></span>
+            </a>
+        </div>
+        <div class='level' data-bind="hidden: data().collapsed">
+            <!--ko foreach: data().children -->
+            <amdt-second-level-menu-item params="parent: $root, data: $data"></amdt-second-level-menu-item>
+            <!--/ko-->
+        </div>
+    </template>
+
+    <template id="amdt-second-level-menu-item">
+        <div class='Hx noselect' data-bind="click: collapse">
+            <span class="Plus">&nbsp;</span>
+            <a class='Plus' style='cursor: pointer; cursor: hand;' data-bind="text: data().collapsed ? '+':'-'" style="color: #000000;" ></a>
+            <a href='javascript:void(0)' data-bind="attr: {id: data().id,title: data().title}" style="color: #000000;">
+                <span class='Number' data-bind="text: data().title"></span>
+            </a>
+        </div>
+        <div class='level' data-bind="hidden: data().collapsed">
+            <!--ko foreach: {data: data().children, as: 'child' } -->
+            <!--ko if: child.children && child.children.length > 0 -->
+            <amdt-second-level-menu-item params="parent: $root, data: child"></amdt-second-level-menu-item>
+            <!--/ko-->
+            <!--ko if: !child.children || (child.children && child.children.length === 0) -->
+            <amdt-last-level-menu-item params="parent: $root, data: child"></amdt-last-level-menu-item>
+            <!--/ko-->
+            <!--/ko-->
+        </div>
+    </template>
+
+    <template id="amdt-last-level-menu-item">
+        <a href='javascript:void(0)' data-bind="click : open">
+            <span class='Number' data-bind="text: data().title"></span>
+        </a>
+    </template>
+
+    <template id='sup-template'>
+        <h2 data-bind='text: title' class="date"></h2>
+        <table class="SupTable" cellspacing="0">
+            <thead>
+                <tr id="HEADER1Lang1">
+                    <th class="SupTable-NRYear-th" style="padding:5px;text-align:left;"
+                        data-bind='text: table().header.year'>NR/Year</th>
+                    <th class="SupTable-Affect-th" style="padding:5px;text-align:left;"
+                        data-bind='text: table().header.affect'>AIP section(s) affected</th>
+                    <th class="SupTable-Period-th" style="padding:5px;text-align:left;"
+                        data-bind='text: table().header.period'>Period of validity</th>
+                </tr>
+                <tr id="HEADER2Lang1">
+                    <th class="SupTable-Subject-th" colspan="2" style="padding:5px;text-align:left;"
+                        data-bind='text: table().header.subject'>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--ko foreach: table().rows -->
+                <tr id="01SUPen-GBdetails" class="SupTable-Row">
+                    <td class="SupTable-NRYear-td">
+                        <a data-bind="click: function(data, event) { $component.open($data.year, data, event) },attr: {title: $data.year.title}, text: $data.year.text"
+                            href="javascript:void(0)">
+                        </a>
+                    </td>
+                    <td class="SupTable-Affect-td">
+                        <!--ko foreach: $data.affects  -->
+                        <a data-bind="click: function(data, event) { $component.openAffect($data, data, event) }, attr: {title: $data.title},text: $data.text"
+                            href="javascript:void(0)">
+                            <br>
+                        </a>
+                        <!--/ko-->
+                        
+                    </td>
+                    <td class="SupTable-Period-td" data-bind='text: $data.period.text'>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="SupTable-Subject-td" colspan="3" data-bind='text: $data.subject.text'>
+                    </td>
+                </tr>
+                <!--/ko-->
+            </tbody>
+        </table>
+    </template>
+
+    <template id='aic-template'>
+        <div style="padding-bottom: 200px;">
+            <h2 data-bind='text: title' class="date"></h2>
+            <table class="SupTable" cellspacing="0">
+                <thead>
+                    <tr id="HEADER1Lang1">
+                        <th class="SupTable-NRYear-th" style="padding:5px;text-align:left;"
+                            data-bind='text: table().header.year'></th>
+                        <th class="SupTable-Affect-th" style="padding:5px;text-align:left;"
+                            data-bind='text: table().header.published'></th>
+                        <th class="SupTable-Subject-th" style="padding:5px;text-align:left;"
+                            data-bind='text: table().header.subject'></th>
+                    </tr>
+                </thead>
+            </table>
+            <!--ko foreach: menu() -->
+            <aic-first-level-menu-item params="parent: $parent, data: $data"></aic-first-level-menu-item>
+            <!-- /ko-->
+        </div>
+    </template>
+
+    <template id="aic-first-level-menu-item">
+        <div class="SupSeriesTitle" data-bind="click: collapse">
+            <span id="Aplus" class="Plus" style="cursor:pointer; cursor:hand;" data-bind="text: data().collapsed ? '+':'-'" ></span>
+            <a href="javascript:void(0)" >
+                <span class="Number" data-bind="text: data().title"></span>
+            </a>
+        </div>
+        <div data-bind="hidden: data().collapsed">
+            <!--ko foreach: data().children -->
+            <table id="01AICfr-FRdetails" class="SupTable" cellspacing="0">
+                <tbody>
+                    <tr class="SupTable-Row">
+                        <td class="SupTable-Affect-td" style="width: 27%;padding-left: 15px;">
+                            <aic-last-level-menu-item params="parent: $root, data: $data"></aic-last-level-menu-item>
+                        </td>
+                        <td style="width: 33%;" data-bind="text: $data.published"></td>
+                        <td class="SupTable-Subject-td" style="width: 33%;" data-bind="text: $data.subject">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- /ko-->
+        </div>
+    </template>
+
+    <template id="aic-last-level-menu-item">
+        <a href='javascript:void(0)' data-bind="click : open">
+            <span class='Number' data-bind="text: data().text"></span>
+        </a>
+    </template>
+
+    <template id='search-template'>
+        <div id="containerFormSearchResult">
+            <form name="searchForm" data-bind="{submit: search, clickBubble: false}">
+                <p> Search for:
+                    <input data-bind="textInput: srchval" type="text" name="srchval" size="26" autocomplete="off">
+                </p>
+                <button type="submit">Start</button>
+                <button type="reset" data-bind="click:reset">Clear</button>
+            </form>
+        </div>
+        <div name="containerSearchResult" id="containerSearchResult">
+            <p data-bind="hidden: submit() !== true">
+                <label id="totalItemResult">
+                    <span>Total Item: </span>
+                    <span data-bind="text: results().length"></span>
+                </label>
+            </p>
+            <div style="margin-bottom: 172px;">
+            <!--ko foreach: results-->
+            <div class="Hx">
+                <a data-bind="click: $parent.open" href="javascript:void(0)" style="cursor: pointer; cursor: hand;">
+                    <label style="cursor: pointer; cursor: hand;" data-bind="text: $data.title">GEN 0.1 Preface</label>
+                </a>
+            </div>
+            <!--/ko-->
+            </div>
+        </div>
+    </template>
+
+    <script src="./searchIndex.js" charset="UTF-8"></script>
+    <script src="./navigationCommand.js" charset="UTF-8"></script>
+    <script src="./v2/js/split.min.js"></script>
+    <script src="./v2/js/knockout.min.js"></script>
+    <script src="./v2/js/datasource.js" charset="UTF-8"></script>
+    <script src="./v2/js/app.js"></script>
+</body>
+
+</html>

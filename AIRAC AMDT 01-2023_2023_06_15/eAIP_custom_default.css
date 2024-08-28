@@ -22,7 +22,7 @@
 	font-family: Arial;
 	white-space: normal;
 }
-.T2_default, .T3_default, .T4_default, .T5_default, .T6_default {
+.T2_default, .T3_default, .T4_default, .T5_default, .T6_default, .T7_default, .T8_default {
 	display: block;
   color: #800000;
   font-family: Arial;
@@ -62,7 +62,7 @@
 	font-family: Arial;
 }
 /*Paragraph-text */
-.P2_default, .P3_default, .P4_default,.P5_default,.P6_default{
+.P2_default, .P3_default, .P4_default,.P5_default,.P6_default,.P7_default,.P8_default{
 	display: block;
 	text-align: justify;
 	text-indent: 0px;

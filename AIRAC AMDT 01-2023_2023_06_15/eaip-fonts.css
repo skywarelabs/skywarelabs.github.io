@@ -5,12 +5,16 @@
   --T4_default_font: 13px;
   --T5_default_font: 13px;
   --T6_default_font: 13px;
+  --T7_default_font: 13px;
+  --T8_default_font: 13px;
   --P1_default_font: 13px;
   --P2_default_font: 13px;
   --P3_default_font: 13px;
   --P4_default_font: 13px;
   --P5_default_font: 13px;
   --P6_default_font: 13px;
+  --P7_default_font: 13px;
+  --P8_default_font: 13px;
   --PartTitle_font :16px;
   --SectionTitle_font :15px;
   --SubSectionTitle_font :14px;
@@ -91,7 +95,7 @@ table.IndSubTable[class*='_title'] *{
    font-size: var(--T5_default_font) !important;
    font-family: var(--font-family) !important;
 }
-.T6_default *, .T6_default{
+.T6_default *, .T6_default, .T7_default *, .T7_default, .T8_default *, .T8_default{
    font-size: var(--T6_default_font) !important;
    font-family: var(--font-family) !important;
 }
@@ -129,7 +133,7 @@ table.IndSubTable[class*='_title'] *{
 	font-family: var(--font-family) !important;
 }
 /*Paragraph-text */
-.P6_default *, .P6_default{
+.P6_default *, .P6_default, .P7_default *, .P7_default, .P8_default *, .P8_default{
 	font-size: var(--P6_default_font) !important;
 	font-family: var(--font-family) !important;
 }

@@ -88,13 +88,35 @@ async function LinkCheck(url) {
 	return http.status;
 }
 
+async function MergeFileCheck(url){
+
+	let folderName = url.substring(0,url.lastIndexOf("/"));
+	let name = url.substring(url.lastIndexOf("/")+1);
+	name = name.replaceAll("%20"," ");
+	let splittedName = name.split(".");
+	splittedName[1] = splittedName[1].length > 1 ? splittedName[1].substring(0, 1) : splittedName[1];
+	let mergedName = folderName + "/" + "Merged_" + splittedName[0]+"."+splittedName[1]+".pdf";
+	
+	let http = await fetch(mergedName);
+	
+	if(http.status === 404){
+		return url;
+	}else{
+		return mergedName;
+	}
+
+}
+
  async function loadHrefForPdf(obj) {
 	try {
 		var link = getFilePdf();
 
+		link = await MergeFileCheck(link);
+		
 		if (typeof link !== 'undefined' && link != null && link != 'undefined') {
 			obj.href = link;
 		}
+
 	var fileExist = await LinkCheck(link).then((e) => {
 		if(e === 404){
 			var t = obj.href.split(".pdf");
@@ -279,6 +301,10 @@ function setCurrentLang1Amdt() {
 	removeClassToObj(targetWindow.document.getElementById("dateLang1"), "invisibile");
 	addClassToObj(targetWindow.document.getElementById("amdtIntroLang2"), "invisibile");
 	removeClassToObj(targetWindow.document.getElementById("amdtIntroLang1"), "invisibile");
+	
+	targetWindow.document.getElementById("HEADERDESCRIPTIONLang2").style.display = 'none';
+	targetWindow.document.getElementById("HEADERDESCRIPTIONLang1").style.display = '';
+	
 	addClassToArrayObj(targetWindow, lang2RootHeaderAMDT, "invisibile");
 	removeClassToArrayObj(targetWindow, lang1RootHeaderAMDT, "invisibile");
 	removeClassToArrayObj(targetWindow, menuItemSectionAMDTLang1, "invisibile");
@@ -291,6 +317,10 @@ function setCurrentLang2Amdt() {
 	removeClassToObj(targetWindow.document.getElementById("dateLang2"), "invisibile");
 	addClassToObj(targetWindow.document.getElementById("amdtIntroLang1"), "invisibile");
 	removeClassToObj(targetWindow.document.getElementById("amdtIntroLang2"), "invisibile");
+	
+	targetWindow.document.getElementById("HEADERDESCRIPTIONLang2").style.display = '';
+	targetWindow.document.getElementById("HEADERDESCRIPTIONLang1").style.display = 'none';
+	
 	addClassToArrayObj(targetWindow, lang1RootHeaderAMDT, "invisibile");
 	removeClassToArrayObj(targetWindow, lang2RootHeaderAMDT, "invisibile");
 	addClassToArrayObj(targetWindow, menuItemSectionAMDTLang1, "invisibile");
